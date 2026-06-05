@@ -6,6 +6,7 @@
     <title>準高三生涯導航與數據探索報告系統</title>
     <!-- Tailwind CSS for Responsive Premium Styling -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Phospor Icons or FontAwesome for richer visual look -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap');
         body {
@@ -39,8 +40,8 @@
             <div class="flex items-center gap-3">
                 <span class="text-2xl">🎯</span>
                 <div>
-                    <h1 class="font-bold text-base sm:text-lg leading-tight">準高三生涯導航系統</h1>
-                    <p class="text-xs text-slate-400">數據驅動的自主生涯探索</p>
+                    <h1 class="font-bold text-base sm:text-lg leading-tight">準高三生涯導航系統 v2.0</h1>
+                    <p class="text-xs text-slate-400">數據驅動的自主生涯與多元升學路徑探索</p>
                 </div>
             </div>
             <div class="flex items-center gap-2 flex-wrap">
@@ -58,13 +59,56 @@
     </nav>
 
     <!-- Header Banner for Student Mode (No Print) -->
-    <header id="student-header" class="bg-gradient-to-r from-indigo-700 via-blue-600 to-indigo-800 text-white py-10 px-4 shadow-lg no-print">
+    <header id="student-header" class="bg-gradient-to-r from-indigo-800 via-blue-700 to-slate-900 text-white py-12 px-4 shadow-lg no-print">
         <div class="max-w-4xl mx-auto text-center">
-            <span class="bg-indigo-500/30 text-indigo-200 text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider border border-indigo-400/20">高二升高三 · 自主探索學習單</span>
+            <span class="bg-indigo-500/40 text-indigo-200 text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider border border-indigo-400/20">高二升高三 · 自主探索與升學實力比對學習單</span>
             <h2 class="text-3xl md:text-5xl font-black mt-4 tracking-tight drop-shadow-sm">親手拆解你的「理想與現實」</h2>
             <p class="text-indigo-100 mt-3 text-sm md:text-base max-w-2xl mx-auto leading-relaxed">
-                這不是一份普通的心得寫作。請透過真實的「社會薪資數據」與「升學實力比對」，為你明年的大考規劃出一條最精準的黃金戰略！
+                這不是一份應付了事的心得。我們提供台灣最完整的**官方產業統計**與**多元升學路徑資料庫**，引導你踏出最精準的大考戰略方針！
             </p>
+            
+            <!-- Collapsible Explorer Toolbox -->
+            <div class="mt-8 bg-slate-800/80 backdrop-blur border border-slate-700/50 rounded-xl p-5 max-w-3xl mx-auto text-left shadow-2xl">
+                <div class="flex items-center justify-between border-b border-slate-700/80 pb-3 mb-3 cursor-pointer" onclick="toggleToolbox()">
+                    <h3 class="font-bold text-sm text-slate-200 flex items-center gap-2">
+                        <span>🧭</span> 準高三生涯探索萬用工具箱 (點選展開/收起官網入口)
+                    </h3>
+                    <span id="toolbox-toggle-icon" class="text-xs text-slate-400">▼ 收起</span>
+                </div>
+                <div id="toolbox-links" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 text-xs transition-all duration-300">
+                    <div class="p-2 bg-slate-900/40 rounded-lg hover:bg-slate-900 transition-all border border-slate-700/30">
+                        <span class="block font-bold text-blue-400 mb-0.5">💰 主計處薪情平臺</span>
+                        <p class="text-[10px] text-slate-400 mb-1.5">探索台灣各行各業中位數與平均數分布</p>
+                        <a href="https://earnings.dgbas.gov.tw/" target="_blank" class="text-[10px] text-amber-400 font-semibold hover:underline">立即前往 ↗</a>
+                    </div>
+                    <div class="p-2 bg-slate-900/40 rounded-lg hover:bg-slate-900 transition-all border border-slate-700/30">
+                        <span class="block font-bold text-blue-400 mb-0.5">🎓 勞動部大專生就業導航</span>
+                        <p class="text-[10px] text-slate-400 mb-1.5">查詢社會新鮮人、不同學歷的起薪流向</p>
+                        <a href="https://yoursalary.taiwanjobs.gov.tw/" target="_blank" class="text-[10px] text-amber-400 font-semibold hover:underline">立即前往 ↗</a>
+                    </div>
+                    <div class="p-2 bg-slate-900/40 rounded-lg hover:bg-slate-900 transition-all border border-slate-700/30">
+                        <span class="block font-bold text-emerald-400 mb-0.5">🏫 ColleGo! 大學選才輔助</span>
+                        <p class="text-[10px] text-slate-400 mb-1.5">教育部官方 18 學群能力特質與科目對接</p>
+                        <a href="https://collego.edu.tw/" target="_blank" class="text-[10px] text-amber-400 font-semibold hover:underline">立即前往 ↗</a>
+                    </div>
+                    <div class="p-2 bg-slate-900/40 rounded-lg hover:bg-slate-900 transition-all border border-slate-700/30">
+                        <span class="block font-bold text-emerald-400 mb-0.5">🔍 大學問升學資訊網</span>
+                        <p class="text-[10px] text-slate-400 mb-1.5">一站式查詢校系簡章、名額及採計加權</p>
+                        <a href="https://www.unews.com.tw/" target="_blank" class="text-[10px] text-amber-400 font-semibold hover:underline">立即前往 ↗</a>
+                    </div>
+                    <div class="p-2 bg-slate-900/40 rounded-lg hover:bg-slate-900 transition-all border border-slate-700/30">
+                        <span class="block font-bold text-violet-400 mb-0.5">🎬 IOH 開放個人經驗平台</span>
+                        <p class="text-[10px] text-slate-400 mb-1.5">各科系學長姐真實甘苦談與就讀心得演講</p>
+                        <a href="https://ioh.tw/" target="_blank" class="text-[10px] text-amber-400 font-semibold hover:underline">立即前往 ↗</a>
+                    </div>
+                    <div class="p-2 bg-slate-900/40 rounded-lg hover:bg-slate-900 transition-all border border-slate-700/30">
+                        <span class="block font-bold text-violet-400 mb-0.5">📝 作伙學 (學習歷程指引)</span>
+                        <p class="text-[10px] text-slate-400 mb-1.5">官方精選！教你如何呈現課程成果與多元表現</p>
+                        <a href="https://www.108epo.com/" target="_blank" class="text-[10px] text-amber-400 font-semibold hover:underline">立即前往 ↗</a>
+                    </div>
+                </div>
+            </div>
+
             <div class="mt-6 flex flex-wrap justify-center gap-4 text-xs text-indigo-200">
                 <span class="bg-slate-900/30 px-3 py-1.5 rounded-lg border border-white/5">🔒 瀏覽器本機自動暫存</span>
                 <span class="bg-slate-900/30 px-3 py-1.5 rounded-lg border border-white/5">📂 支援 JSON 備份檔案導出</span>
@@ -111,9 +155,12 @@
                         <span class="text-xs font-bold text-blue-600 tracking-wider">TASK 01</span>
                         <h3 class="text-xl font-bold text-slate-900 mt-1">打破浪漫泡沫——台灣產業薪資地圖調查</h3>
                     </div>
-                    <div class="no-print">
-                        <a href="https://earnings.dgbas.gov.tw/" target="_blank" class="inline-flex items-center gap-2 bg-blue-50 text-blue-700 hover:bg-blue-100 text-xs font-bold px-4 py-2.5 rounded-lg transition-all border border-blue-200">
-                            🔍 點我開啟：行政院主計總處 薪情平臺 ↗
+                    <div class="no-print flex flex-wrap gap-2">
+                        <a href="https://earnings.dgbas.gov.tw/" target="_blank" class="inline-flex items-center gap-1.5 bg-blue-50 text-blue-700 hover:bg-blue-100 text-xs font-bold px-3 py-2 rounded-lg transition-all border border-blue-200">
+                            💰 1. 主計處薪情平臺 ↗
+                        </a>
+                        <a href="https://yoursalary.taiwanjobs.gov.tw/" target="_blank" class="inline-flex items-center gap-1.5 bg-sky-50 text-sky-700 hover:bg-sky-100 text-xs font-bold px-3 py-2 rounded-lg transition-all border border-sky-200">
+                            💼 2. 勞動部大專就業導航 ↗
                         </a>
                     </div>
                 </div>
@@ -123,7 +170,7 @@
                     <label class="block text-sm font-bold text-slate-700 mb-2">
                         Q1. 什麼是「平均數」？什麼是「中位數」？為什麼在評估薪水時，看「中位數」通常比「平均數」更能反映台灣「一般上班族」的真實生活水平？
                     </label>
-                    <p class="text-xs text-slate-400 mb-2">提示：極端高薪的人（例如企業家、頂尖晶圓高管）會對這兩個數字造成什麼影響？</p>
+                    <p class="text-xs text-slate-400 mb-2">提示：極端高薪的人（例如高階主管、頂尖晶圓大廠工程師）會對平均數造成拉高效果，這在統計學上被稱為什麼偏差？</p>
                     <textarea id="q1-ans" rows="3" class="w-full bg-slate-50 border border-slate-200 rounded-lg p-3 text-slate-800 focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm leading-relaxed" placeholder="請上網搜尋並用你自己的話簡述：為什麼中位數在低薪、中產階級的薪資評估中更具備說服力..."></textarea>
                 </div>
 
@@ -132,7 +179,7 @@
                     <label class="block text-sm font-bold text-slate-700 mb-1">
                         Q2. 請透過主計處或新聞查詢台灣近三年（112、113、114年）全體受僱員工「全年總薪資」數據：
                     </label>
-                    <p class="text-xs text-slate-400 mb-4">（114年若尚未有完整統計，可填寫至最新一季推估值或最新新聞發布數據）</p>
+                    <p class="text-xs text-slate-400 mb-4">（114年為最新推估值或主計總處最新公佈之平均與中位年薪）</p>
                     
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
                         <div class="bg-white p-4 rounded-lg border border-slate-200 shadow-sm">
@@ -179,9 +226,14 @@
 
                 <!-- Deep Dive for Individual Domain -->
                 <div class="border-t border-dashed border-slate-200 pt-6 mt-6">
-                    <span class="bg-amber-100 text-amber-800 text-xs font-bold px-3 py-1 rounded-full border border-amber-200">🔍 個人興趣產業深水區調查</span>
-                    <p class="text-xs text-slate-400 mt-2 mb-4">
-                        為了避免大家的答案完全雷同，本區請根據你個人在上方寫下的「感興趣領域」進行專屬研究。您可以利用 104/1111 薪資公秤、勞動部初任人員調查或各職缺徵才頁面。
+                    <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 mb-2">
+                        <span class="bg-amber-100 text-amber-800 text-xs font-bold px-3 py-1 rounded-full border border-amber-200">🔍 個人興趣產業深水區調查（避免大同小異）</span>
+                        <a href="https://yoursalary.taiwanjobs.gov.tw/" target="_blank" class="no-print text-xs text-blue-600 hover:underline flex items-center gap-1">
+                            💡 開啟：勞動部大專生就業導航 (內有細分產業提繳) ↗
+                        </a>
+                    </div>
+                    <p class="text-xs text-slate-400 mb-4">
+                        請根據你基本資料寫下的「感興趣領域」進行研究。你可以利用勞動部就業導航、104薪資大數據或是各求職平台的實際徵才資訊進行深度分析。
                     </p>
                     
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
@@ -202,26 +254,26 @@
                     <div class="mb-4">
                         <div class="flex justify-between items-center mb-2">
                             <label class="block text-sm font-bold text-slate-700">Q5. 在該產業中，你未來最嚮往的「具體職缺」與其硬核技能調查：</label>
-                            <span class="no-print"><a href="https://www.104.com.tw/jobs/main/" target="_blank" class="text-xs text-blue-500 hover:underline">🔗 點我前往 104 職缺查詢 ↗</a></span>
+                            <span class="no-print"><a href="https://www.104.com.tw/jobs/main/" target="_blank" class="text-xs text-blue-500 hover:underline">🔗 104 職缺查詢 ↗</a></span>
                         </div>
                         <div class="bg-slate-50 p-4 rounded-xl border border-slate-100 space-y-3">
                             <div class="flex flex-col sm:flex-row items-start sm:items-center gap-2">
                                 <span class="text-xs font-bold text-slate-500 shrink-0">嚮往職缺名稱：</span>
-                                <input type="text" id="q5-job-title" class="w-full sm:w-64 bg-white border border-slate-200 rounded-lg px-3 py-1.5 text-xs font-semibold focus:outline-none focus:ring-1 focus:ring-blue-500" placeholder="例如：晶片設計工程師、理財規劃師、UI/UX設計師">
+                                <input type="text" id="q5-job-title" class="w-full sm:w-64 bg-white border border-slate-200 rounded-lg px-3 py-1.5 text-xs font-semibold focus:outline-none focus:ring-1 focus:ring-blue-500" placeholder="例如：IC設計工程師、理財規劃分析師、臨床護理師">
                             </div>
-                            <p class="text-xs text-slate-400">請從徵才網站的職務說明中，整理出該工作要求的 **三大關鍵能力、相關執照或限制科系**：</p>
+                            <p class="text-xs text-slate-400">請從求職網站的該職務說明中，整理出工作要求的 **三大關鍵能力、限制科系或必備證照**：</p>
                             <div class="space-y-2">
                                 <div class="flex items-center gap-2">
                                     <span class="text-xs font-bold text-slate-400">1</span>
-                                    <input type="text" id="q5-skill-1" class="w-full bg-white border border-slate-200 rounded-lg px-3 py-1.5 text-xs focus:outline-none focus:ring-1 focus:ring-blue-500" placeholder="專業能力 / 軟體能力 / 必備證照一">
+                                    <input type="text" id="q5-skill-1" class="w-full bg-white border border-slate-200 rounded-lg px-3 py-1.5 text-xs focus:outline-none focus:ring-1 focus:ring-blue-500" placeholder="專業學科背景（如：資工、電機相關）/ 特定程式語言或設計能力">
                                 </div>
                                 <div class="flex items-center gap-2">
                                     <span class="text-xs font-bold text-slate-400">2</span>
-                                    <input type="text" id="q5-skill-2" class="w-full bg-white border border-slate-200 rounded-lg px-3 py-1.5 text-xs focus:outline-none focus:ring-1 focus:ring-blue-500" placeholder="專業能力 / 軟體能力 / 必備證照二">
+                                    <input type="text" id="q5-skill-2" class="w-full bg-white border border-slate-200 rounded-lg px-3 py-1.5 text-xs focus:outline-none focus:ring-1 focus:ring-blue-500" placeholder="證照、英語多益門檻需求或執業執照一">
                                 </div>
                                 <div class="flex items-center gap-2">
                                     <span class="text-xs font-bold text-slate-400">3</span>
-                                    <input type="text" id="q5-skill-3" class="w-full bg-white border border-slate-200 rounded-lg px-3 py-1.5 text-xs focus:outline-none focus:ring-1 focus:ring-blue-500" placeholder="專業能力 / 軟體能力 / 必備證照三">
+                                    <input type="text" id="q5-skill-3" class="w-full bg-white border border-slate-200 rounded-lg px-3 py-1.5 text-xs focus:outline-none focus:ring-1 focus:ring-blue-500" placeholder="軟實力 / 溝通協調 / 必備軟體操作工具">
                                 </div>
                             </div>
                         </div>
@@ -236,9 +288,15 @@
                         <span class="text-xs font-bold text-emerald-600 tracking-wider">TASK 02</span>
                         <h3 class="text-xl font-bold text-slate-900 mt-1">描繪你的升學座標——目標科系與自我實力對照</h3>
                     </div>
-                    <div class="no-print">
-                        <a href="https://www.cac.edu.tw/" target="_blank" class="inline-flex items-center gap-2 bg-emerald-50 text-emerald-700 hover:bg-emerald-100 text-xs font-bold px-4 py-2.5 rounded-lg transition-all border border-emerald-200">
-                            🔍 點我開啟：大學甄選入學委員會官網 ↗
+                    <div class="no-print flex flex-wrap gap-2">
+                        <a href="https://collego.edu.tw/" target="_blank" class="inline-flex items-center gap-1.5 bg-emerald-50 text-emerald-700 hover:bg-emerald-100 text-xs font-bold px-3 py-2 rounded-lg transition-all border border-emerald-200">
+                            🏫 ColleGo! 找學群 ↗
+                        </a>
+                        <a href="https://www.unews.com.tw/" target="_blank" class="inline-flex items-center gap-1.5 bg-green-50 text-green-700 hover:bg-green-100 text-xs font-bold px-3 py-2 rounded-lg transition-all border border-green-200">
+                            🔍 大學問全功能查詢 ↗
+                        </a>
+                        <a href="https://ioh.tw/" target="_blank" class="inline-flex items-center gap-1.5 bg-violet-50 text-violet-700 hover:bg-violet-100 text-xs font-bold px-3 py-2 rounded-lg transition-all border border-violet-200">
+                            🎬 IOH 學長姐影片 ↗
                         </a>
                     </div>
                 </div>
@@ -248,26 +306,26 @@
                     <div>
                         <label class="block text-sm font-bold text-slate-700 mb-2">Q6. 選定你的頭號奮鬥目標：</label>
                         <div class="flex gap-2">
-                            <input type="text" id="q6-uni" class="w-1/2 bg-slate-50 border border-slate-200 rounded-lg px-3 py-2 text-slate-800 text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-emerald-500" placeholder="目標大學 (如：國立成功大學)">
-                            <input type="text" id="q6-dept" class="w-1/2 bg-slate-50 border border-slate-200 rounded-lg px-3 py-2 text-slate-800 text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-emerald-500" placeholder="目標科系 (如：電機工程學系)">
+                            <input type="text" id="q6-uni" class="w-1/2 bg-slate-50 border border-slate-200 rounded-lg px-3 py-2 text-slate-800 text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-emerald-500" placeholder="目標大學 (如：國立陽明交通大學)">
+                            <input type="text" id="q6-dept" class="w-1/2 bg-slate-50 border border-slate-200 rounded-lg px-3 py-2 text-slate-800 text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-emerald-500" placeholder="目標科系 (如：資訊工程學系)">
                         </div>
                     </div>
                     <div>
-                        <label class="block text-sm font-bold text-slate-700 mb-2">Q7. 該科系去年（114學年度）申請入學最低通過篩選標準：</label>
+                        <label class="block text-sm font-bold text-slate-700 mb-2">Q7. 該科系去年申請入學最低通過篩選標準（請至甄選會或大學問查詢）：</label>
                         <div class="flex gap-2">
-                            <input type="text" id="q7-subject" class="w-1/2 bg-slate-50 border border-slate-200 rounded-lg px-3 py-2 text-slate-800 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500" placeholder="篩選/採計考科 (如: 國, 英文, 數A)">
-                            <input type="text" id="q7-score" class="w-1/2 bg-slate-50 border border-slate-200 rounded-lg px-3 py-2 text-slate-800 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500" placeholder="去年錄取/通過標準 (如: 國英數A共38級分)">
+                            <input type="text" id="q7-subject" class="w-1/2 bg-slate-50 border border-slate-200 rounded-lg px-3 py-2 text-slate-800 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500" placeholder="篩選採計科目 (如: 英, 數A, 自)">
+                            <input type="text" id="q7-score" class="w-1/2 bg-slate-50 border border-slate-200 rounded-lg px-3 py-2 text-slate-800 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500" placeholder="去年錄取/通過級分 (如: 數A自共27級分)">
                         </div>
                     </div>
                 </div>
 
                 <!-- Q8 -->
                 <div class="border-t border-slate-100 pt-6">
-                    <label class="block text-sm font-bold text-slate-700 mb-3">Q8. 個人定位與差距分析（誠實面對實力數據）：</label>
+                    <label class="block text-sm font-bold text-slate-700 mb-3">Q8. 個人定位與差距分析（請誠實面對目前的實力數據）：</label>
                     
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
-                            <span class="text-xs font-bold text-slate-500 block mb-2">📊 【指標一：繁星保送關鍵——在校總成績】</span>
+                            <span class="text-xs font-bold text-slate-500 block mb-2">📊 【指標一：繁星保送關鍵——在校學業總成績】</span>
                             <div class="flex items-center gap-2">
                                 <span class="text-sm">我目前的在校「校排百分比」為：</span>
                                 <input type="number" id="my-rank-percent" oninput="calculateGap()" class="w-16 bg-white border border-slate-200 rounded-lg px-2 py-1.5 text-center text-sm font-bold focus:outline-none focus:ring-1 focus:ring-emerald-500"> %
@@ -277,7 +335,7 @@
                         <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
                             <span class="text-xs font-bold text-slate-500 block mb-2">📝 【指標二：申請/分科關鍵——最新模擬考成績】</span>
                             <div class="space-y-2 text-sm">
-                                <p class="text-[10px] text-slate-400">請填入目標校系有採計的考科（至多三科）：</p>
+                                <p class="text-[10px] text-slate-400">請填入目標校系採計的學測考科（至多三科）：</p>
                                 <div class="grid grid-cols-3 gap-2">
                                     <div>
                                         <input type="text" id="mock-sub-1" class="w-full border rounded-lg px-1.5 py-1 text-xs text-center focus:ring-1 focus:ring-emerald-500" placeholder="科目1(如:英)">
@@ -312,7 +370,7 @@
                             </div>
                         </div>
                         <div class="mt-4 border-t border-emerald-200/50 pt-3 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-                            <span class="text-xs font-bold text-emerald-800">📊 戰力雷達分析：</span>
+                            <span class="text-xs font-bold text-emerald-800">📊 戰力雷達診斷：</span>
                             <div id="gap-badge" class="px-4 py-1.5 rounded-full text-xs font-bold text-center inline-block bg-slate-200 text-slate-700 shadow-sm">
                                 請輸入模考分數與目標分數進行診斷
                             </div>
@@ -323,8 +381,17 @@
 
             <!-- TASK 3: PATHWAY CHOICES & PLAN -->
             <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 print-card page-break">
-                <span class="text-xs font-bold text-violet-600 tracking-wider">TASK 03</span>
-                <h3 class="text-xl font-bold text-slate-900 mt-1 mb-6 border-b pb-4">多元升學管道的抉擇與「高三黃金期」戰術規劃</h3>
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-center border-b pb-4 mb-6 gap-4">
+                    <div>
+                        <span class="text-xs font-bold text-violet-600 tracking-wider">TASK 03</span>
+                        <h3 class="text-xl font-bold text-slate-900 mt-1">多元升學管道的抉擇與「高三黃金期」戰術規劃</h3>
+                    </div>
+                    <div class="no-print">
+                        <a href="https://www.108epo.com/" target="_blank" class="inline-flex items-center gap-1.5 bg-violet-50 text-violet-700 hover:bg-violet-100 text-xs font-bold px-3 py-2 rounded-lg transition-all border border-violet-200">
+                            📝 點我開啟：教育部作伙學學習歷程手冊 ↗
+                        </a>
+                    </div>
+                </div>
 
                 <!-- Segment 1: Four Pathways -->
                 <div class="mb-6">
@@ -338,7 +405,7 @@
                         <div class="border border-slate-100 rounded-xl p-4 bg-slate-50/50 hover:bg-slate-50 transition-all">
                             <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-2">
                                 <span class="text-sm font-bold text-slate-800">1. 特殊選才（高三10~12月）</span>
-                                <span class="text-xs text-slate-400 font-medium">不看學測成績，極度看重「特殊才能、學術競賽」或「特殊經歷」</span>
+                                <span class="text-xs text-slate-400 font-medium">不看學測成績，極度看重「特殊才能、學術競賽」或「特殊身分經歷」</span>
                             </div>
                             <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
                                 <div class="md:col-span-1 flex flex-col justify-center space-y-1">
@@ -359,18 +426,18 @@
                         <div class="border border-slate-100 rounded-xl p-4 bg-slate-50/50 hover:bg-slate-50 transition-all">
                             <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-2">
                                 <span class="text-sm font-bold text-slate-800">2. 繁星推薦（高三3月）</span>
-                                <span class="text-xs text-slate-400 font-medium">100% 依據「在校成績校排百分比」為主篩，學測分數為輔</span>
+                                <span class="text-xs text-slate-400 font-medium">100% 依據「在校成績校排百分比」為主篩，學測分數僅為檢定/輔篩</span>
                             </div>
                             <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
                                 <div class="md:col-span-1 flex flex-col justify-center space-y-1">
                                     <label class="flex items-center gap-2 text-xs text-slate-600 cursor-pointer">
-                                        <input type="radio" name="pathway-star" value="極大優勢" class="form-radio text-violet-600"> 我的校排在前端，極有優勢
+                                        <input type="radio" name="pathway-star" value="極大優勢" class="form-radio text-violet-600"> 我的校排在最前端，極有優勢
                                     </label>
                                     <label class="flex items-center gap-2 text-xs text-slate-600 cursor-pointer">
                                         <input type="radio" name="pathway-star" value="安全備案" class="form-radio text-violet-600"> 校排在邊緣，做為安全備案
                                     </label>
                                     <label class="flex items-center gap-2 text-xs text-slate-600 cursor-pointer">
-                                        <input type="radio" name="pathway-star" value="完全無望" class="form-radio text-violet-600"> 校排太後面，完全無法使用
+                                        <input type="radio" name="pathway-star" value="完全無望" class="form-radio text-violet-600"> 校排百分比不合用，無法使用
                                     </label>
                                 </div>
                                 <div class="md:col-span-2">
@@ -383,19 +450,19 @@
                         <div class="border border-slate-100 rounded-xl p-4 bg-slate-50/50 hover:bg-slate-50 transition-all">
                             <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-2">
                                 <span class="text-sm font-bold text-slate-800">3. 個人申請（高三3~5月）</span>
-                                <span class="text-xs text-slate-400 font-medium">最主流管道，第一階段篩學測分數，第二階段看學習歷程檔案與面試</span>
+                                <span class="text-xs text-slate-400 font-medium">最主流管道！第一階段篩學測級分，第二階段綜合看「學習歷程檔案」與面試複試</span>
                             </div>
                             <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
                                 <div class="md:col-span-1 flex flex-col justify-center space-y-1">
                                     <label class="flex items-center gap-2 text-xs text-slate-600 cursor-pointer">
-                                        <input type="radio" name="pathway-apply" value="主力戰場" class="form-radio text-violet-600"> 我的主力戰場（分數與檔案有水準）
+                                        <input type="radio" name="pathway-apply" value="主力戰場" class="form-radio text-violet-600"> 我的主力戰場（分數與檔案均有一定水準）
                                     </label>
                                     <label class="flex items-center gap-2 text-xs text-slate-600 cursor-pointer">
-                                        <input type="radio" name="pathway-apply" value="姑且一試" class="form-radio text-violet-600"> 做為中上嘗試，若沒上再拚分科
+                                        <input type="radio" name="pathway-apply" value="姑且一試" class="form-radio text-violet-600"> 做為中上嘗試，若沒上再全力拼分科
                                     </label>
                                 </div>
                                 <div class="md:col-span-2">
-                                    <input type="text" id="pathway-apply-reason" class="w-full bg-white border border-slate-200 rounded-lg px-3 py-2 text-xs focus:outline-none focus:ring-1 focus:ring-violet-500" placeholder="說明原因（我的學習歷程檔案目前完整度高嗎？）：">
+                                    <input type="text" id="pathway-apply-reason" class="w-full bg-white border border-slate-200 rounded-lg px-3 py-2 text-xs focus:outline-none focus:ring-1 focus:ring-violet-500" placeholder="說明原因（我的學習歷程檔案目前與目標科系的契合度如何？）：">
                                 </div>
                             </div>
                         </div>
@@ -404,15 +471,15 @@
                         <div class="border border-slate-100 rounded-xl p-4 bg-slate-50/50 hover:bg-slate-50 transition-all">
                             <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-2">
                                 <span class="text-sm font-bold text-slate-800">4. 分發入學（高三7~8月）</span>
-                                <span class="text-xs text-slate-400 font-medium">決戰筆試，看分科測驗分數（部分校系會回推採計學測分數）</span>
+                                <span class="text-xs text-slate-400 font-medium">真槍實彈筆試對決！看分科測驗分數（部分校系會回推採計或檢定學測成績）</span>
                             </div>
                             <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
                                 <div class="md:col-span-1 flex flex-col justify-center space-y-1">
                                     <label class="flex items-center gap-2 text-xs text-slate-600 cursor-pointer">
-                                        <input type="radio" name="pathway-dist" value="全力決戰" class="form-radio text-violet-600"> 這是我的主戰場（我擅長大範圍筆試）
+                                        <input type="radio" name="pathway-dist" value="全力決戰" class="form-radio text-violet-600"> 這是我的主力戰線（我擅長大範圍筆試，抗壓強）
                                     </label>
                                     <label class="flex items-center gap-2 text-xs text-slate-600 cursor-pointer">
-                                        <input type="radio" name="pathway-dist" value="不願面對" class="form-radio text-violet-600"> 絕不想走到這步（要在學測前安全下莊）
+                                        <input type="radio" name="pathway-dist" value="不願面對" class="form-radio text-violet-600"> 絕不想走到這步（要在學測個申安全下莊）
                                     </label>
                                 </div>
                                 <div class="md:col-span-2">
@@ -459,8 +526,8 @@
                                     <span class="text-xs font-bold text-slate-500 block mb-2">⏰ 2. 自律與時間管理</span>
                                     <div class="space-y-2 text-xs">
                                         <div class="flex items-center gap-1 flex-wrap">
-                                            <span>我決定每天使用手機/手遊的時間限制在</span>
-                                            <input type="text" id="plan-phone" class="w-20 border border-slate-200 rounded-lg px-2 py-1 text-center font-bold" placeholder="例如：45分鐘">
+                                            <span>我決定每天使用手機/社群/手遊的時間限制在</span>
+                                            <input type="text" id="plan-phone" class="w-20 border border-slate-200 rounded-lg px-2 py-1 text-center font-bold" placeholder="例如：30分鐘">
                                         </div>
                                         <div class="flex items-center gap-1 flex-wrap">
                                             <span>並且每天晚上回到家</span>
@@ -597,7 +664,7 @@
     <div id="custom-modal" class="fixed inset-0 bg-slate-950/60 backdrop-blur-sm flex items-center justify-center z-50 hidden no-print">
         <div class="bg-white rounded-2xl max-w-md w-full p-6 shadow-2xl border border-slate-100 m-4 scale-95 transition-all duration-300">
             <h3 id="modal-title" class="text-lg font-black text-slate-900">提示</h3>
-            <p id="modal-message" class="text-sm text-slate-500 mt-2 leading-relaxed">訊息內容</p>
+            <div id="modal-message" class="text-sm text-slate-500 mt-2 leading-relaxed max-h-[60vh] overflow-y-auto">訊息內容</div>
             <div id="modal-actions" class="flex justify-end gap-2 mt-6">
                 <!-- Buttons dynamically loaded here -->
             </div>
@@ -650,15 +717,15 @@
 
     <!-- FOOTER -->
     <footer class="text-center py-8 text-xs text-slate-400 border-t border-slate-200 mt-auto no-print bg-slate-50">
-        <p>© 台灣高中生專屬 · 準高三生涯導航與數據探索系統</p>
-        <p class="mt-1 text-[10px] text-slate-400/70">請依實際生涯探索需求上網搜尋相關法規、薪情平臺、甄選委員會及大考中心數據。</p>
+        <p>© 台灣高中生專屬 · 準高三自主生涯數據導航與升學攻略系統</p>
+        <p class="mt-1 text-[10px] text-slate-400/70">請依實際生涯探索需求上網搜尋相關法規、薪情平臺、勞動部大專生就業導航及甄選委員會公開之數據。</p>
     </footer>
 
     <!-- Firebase Modular Web SDK v11 -->
     <script type="module">
         import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
-        import { getAuth, signInAnonymously, signInWithCustomToken } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
-        import { getFirestore, doc, setDoc, getDoc, collection, getDocs, onSnapshot } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
+        import { getAuth, signInAnonymously } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
+        import { getFirestore, doc, setDoc, collection, onSnapshot } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
 
         // Global Firebase variables
         window.firebaseApp = null;
@@ -751,7 +818,6 @@
             const appId = typeof __app_id !== 'undefined' ? __app_id : 'default-career-survey';
             const collRef = collection(window.firebaseDb, 'artifacts', appId, 'public', 'data', 'submissions');
             
-            // Rule 2: No complex queries. Simple collection read.
             onSnapshot(collRef, (snapshot) => {
                 window.allSubmissions = [];
                 snapshot.forEach((doc) => {
@@ -788,6 +854,19 @@
 
         // Pathway radio groups
         const radioGroups = ['pathway-ts', 'pathway-star', 'pathway-apply', 'pathway-dist'];
+
+        // Toggle Toolbox Visibility
+        function toggleToolbox() {
+            const linksDiv = document.getElementById('toolbox-links');
+            const toggleIcon = document.getElementById('toolbox-toggle-icon');
+            if (linksDiv.classList.contains('hidden')) {
+                linksDiv.classList.remove('hidden');
+                toggleIcon.innerText = "▼ 收起";
+            } else {
+                linksDiv.classList.add('hidden');
+                toggleIcon.innerText = "▲ 展開";
+            }
+        }
 
         // Initial Load and Auto-Save Sync
         window.onload = function() {
@@ -922,7 +1001,6 @@
                 reader.onload = function(e) {
                     try {
                         const parsedData = JSON.parse(e.target.result);
-                        // Validation of data schema
                         if (parsedData['student-name']) {
                             tempSubmissions.push(parsedData);
                         }
@@ -1182,7 +1260,6 @@
             const sub = window.allSubmissions[index];
             if (!sub) return;
 
-            // Display in printable preview or beautiful alert format
             let contentHtml = `
                 <div class="space-y-4 text-xs text-slate-700">
                     <div class="grid grid-cols-2 gap-2 border-b pb-2">
@@ -1190,12 +1267,18 @@
                         <div><strong>興趣領域：</strong> ${sub['target-domain']}</div>
                     </div>
                     <div><strong>Q1. 解讀中位數看法：</strong> ${sub['q1-ans']}</div>
+                    <div class="bg-slate-50 p-2 rounded border">
+                        <strong>近三年全體薪資填答：</strong><br>
+                        112年: 平均 ${sub['q2-112-avg'] || '--'}萬 / 中位 ${sub['q2-112-med'] || '--'}萬<br>
+                        113年: 平均 ${sub['q2-113-avg'] || '--'}萬 / 中位 ${sub['q2-113-med'] || '--'}萬<br>
+                        114年: 平均 ${sub['q2-114-avg'] || '--'}萬 / 中位 ${sub['q2-114-med'] || '--'}萬
+                    </div>
                     <div><strong>Q3/Q4. 興趣產業與薪水：</strong> ${sub['q3-industry']} (中位年薪：${sub['q4-salary']} 萬)</div>
-                    <div><strong>Q5. 職缺硬技能：</strong> ${sub['q5-job-title']} (1: ${sub['q5-skill-1']}, 2: ${sub['q5-skill-2']}, 3: ${sub['q5-skill-3']})</div>
+                    <div><strong>Q5. 職缺硬技能：</strong> ${sub['q5-job-title']} <br> 1: ${sub['q5-skill-1']}<br> 2: ${sub['q5-skill-2']}<br> 3: ${sub['q5-skill-3']}</div>
                     <div class="border-t pt-2"><strong>Q6/Q7. 目標校系去年門檻：</strong> ${sub['q6-uni']} ${sub['q6-dept']} (標準：${sub['q7-score']})</div>
-                    <div><strong>Q8. 校排百分比 / 採計考科：</strong> 在校 ${sub['my-rank-percent']}% | 目標分數 ${sub['target-sum-score']}級分</div>
+                    <div><strong>Q8. 校排百分比 / 採計考科：</strong> 在校 ${sub['my-rank-percent'] || '--'}% | 目標分數 ${sub['target-sum-score'] || '--'}級分</div>
                     <div class="border-t pt-2"><strong>Q9. 學習歷程檔案體檢：</strong> ${sub['q9-ans']}</div>
-                    <div><strong>Q10. 高三強勢補強/時間管理：</strong> 在 ${sub['plan-subject']} 科上：${sub['plan-study-detail']}</div>
+                    <div><strong>Q10. 高三強勢補強/時間管理：</strong> 在 ${sub['plan-subject']} 科上：${sub['plan-study-detail']} <br>手機限制：${sub['plan-phone']} | 讀書時間：${sub['plan-time']}</div>
                     <div><strong>Q11. 自我成熟分數打分：</strong> ${sub['self-score']} 分 / 理由：${sub['q11-ans']}</div>
                 </div>
             `;
@@ -1213,7 +1296,6 @@
             mTitle.innerText = title;
             mMsg.innerHTML = message;
 
-            // Handle Modal Width Size
             const modalDiv = modal.querySelector('.max-w-md');
             if (size === "large") {
                 modalDiv.classList.remove('max-w-md');

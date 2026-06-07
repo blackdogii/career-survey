@@ -40,7 +40,7 @@
                 <span class="text-2xl">🎯</span>
                 <div>
                     <h1 class="font-bold text-base sm:text-lg leading-tight">準高三生涯導航系統 v2.0</h1>
-                    <p class="text-xs text-slate-400">數據驅動的自主生涯與多元升學路徑探索</p>
+                    <p class="text-xs text-slate-400">自主生涯與多元升學路徑探索</p>
                 </div>
             </div>
             <div class="flex items-center gap-2 flex-wrap">
@@ -63,7 +63,7 @@
             <span class="bg-indigo-500/40 text-indigo-200 text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider border border-indigo-400/20">高二升高三 · 自主探索與升學實力比對學習單</span>
             <h2 class="text-3xl md:text-5xl font-black mt-4 tracking-tight drop-shadow-sm">親手拆解你的「理想與現實」</h2>
             <p class="text-indigo-100 mt-3 text-sm md:text-base max-w-2xl mx-auto leading-relaxed">
-                這不是一份應付了事的心得，是引導你踏出最精準的大考戰略方針！
+                這不是一份應付了事的心得，而是引導你大考的戰略方針！
             </p>
             
             <!-- Collapsible Explorer Toolbox -->
@@ -167,7 +167,7 @@
                 <!-- Q1 -->
                 <div class="mb-6">
                     <label class="block text-sm font-bold text-slate-700 mb-2">
-                        Q1. 什麼是「平均數」？什麼是「中位數」？為什麼在評估薪水時，看「中位數」通常比「平均數」更能反映台灣「一般上班族」的真實生活水平？
+                        Q1. 什麼是「平均數」？什麼是「中位數」？為什麼在評估薪水時，看「中位數」通常比「平均數」更能反映台灣「一般上班族」的真實生活水平？ <span class="text-rose-500">*</span>
                     </label>
                     <p class="text-xs text-slate-400 mb-2">提示：極端高薪的人（例如高階主管、頂尖晶圓大廠工程師）會對平均數造成拉高效果，這在統計學上被稱為什麼偏差？</p>
                     <textarea id="q1-ans" rows="3" class="w-full bg-slate-50 border border-slate-200 rounded-lg p-3 text-slate-800 focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm leading-relaxed" placeholder="請上網搜尋並用你自己的話簡述：為什麼中位數在低薪、中產階級的薪資評估中更具備說服力..."></textarea>
@@ -176,7 +176,7 @@
                 <!-- Q2 -->
                 <div class="mb-6 bg-slate-50 rounded-xl p-5 border border-slate-100">
                     <label class="block text-sm font-bold text-slate-700 mb-1">
-                        Q2. 請透過主計處或新聞查詢台灣近三年（112、113、114年）全體受僱員工「全年總薪資」數據：
+                        Q2. 請透過主計處或新聞查詢台灣近三年（112、113、114年）全體受僱員工「全年總薪資」數據： <span class="text-rose-500">*</span>
                     </label>
                     <p class="text-xs text-slate-400 mb-4">（114年為最新推估值或主計總處最新公佈之平均與中位年薪）</p>
                     
@@ -237,11 +237,11 @@
                     
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
                         <div>
-                            <label class="block text-xs font-bold text-slate-700 mb-1">Q3. 我想要深度分析的「特定產業」：</label>
+                            <label class="block text-xs font-bold text-slate-700 mb-1">Q3. 我想要深度分析的「特定產業」： <span class="text-rose-500">*</span></label>
                             <input type="text" id="q3-industry" class="w-full bg-slate-50 border border-slate-200 rounded-lg px-3 py-2 text-slate-800 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="例如：半導體製造業、金融證券保險業、社福與心理諮商...">
                         </div>
                         <div>
-                            <label class="block text-xs font-bold text-slate-700 mb-1">Q4. 這個產業在台灣的「中位數年薪」大概落在多少？</label>
+                            <label class="block text-xs font-bold text-slate-700 mb-1">Q4. 這個產業在台灣的「中位數年薪」大概落在多少？ <span class="text-rose-500">*</span></label>
                             <div class="flex gap-2 items-center">
                                 <input type="number" id="q4-salary" class="w-full bg-slate-50 border border-slate-200 rounded-lg px-3 py-2 text-slate-800 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 text-center font-bold" placeholder="輸入數字">
                                 <span class="text-sm font-semibold">萬元/年</span>
@@ -257,21 +257,21 @@
                         </div>
                         <div class="bg-slate-50 p-4 rounded-xl border border-slate-100 space-y-3">
                             <div class="flex flex-col sm:flex-row items-start sm:items-center gap-2">
-                                <span class="text-xs font-bold text-slate-500 shrink-0">嚮往職缺名稱：</span>
+                                <span class="text-xs font-bold text-slate-500 shrink-0">嚮往職缺名稱： <span class="text-rose-500">*</span></span>
                                 <input type="text" id="q5-job-title" class="w-full sm:w-64 bg-white border border-slate-200 rounded-lg px-3 py-1.5 text-xs font-semibold focus:outline-none focus:ring-1 focus:ring-blue-500" placeholder="例如：IC設計工程師、理財規劃分析師、臨床護理師">
                             </div>
                             <p class="text-xs text-slate-400">請從求職網站的該職務說明中，整理出工作要求的 **三大關鍵能力、限制科系或必備證照**：</p>
                             <div class="space-y-2">
                                 <div class="flex items-center gap-2">
-                                    <span class="text-xs font-bold text-slate-400">1</span>
+                                    <span class="text-xs font-bold text-slate-400">1 <span class="text-rose-500">*</span></span>
                                     <input type="text" id="q5-skill-1" class="w-full bg-white border border-slate-200 rounded-lg px-3 py-1.5 text-xs focus:outline-none focus:ring-1 focus:ring-blue-500" placeholder="專業學科背景（如：資工、電機相關）/ 特定程式語言或設計能力">
                                 </div>
                                 <div class="flex items-center gap-2">
-                                    <span class="text-xs font-bold text-slate-400">2</span>
+                                    <span class="text-xs font-bold text-slate-400">2 <span class="text-rose-500">*</span></span>
                                     <input type="text" id="q5-skill-2" class="w-full bg-white border border-slate-200 rounded-lg px-3 py-1.5 text-xs focus:outline-none focus:ring-1 focus:ring-blue-500" placeholder="證照、英語多益門檻需求或執業執照一">
                                 </div>
                                 <div class="flex items-center gap-2">
-                                    <span class="text-xs font-bold text-slate-400">3</span>
+                                    <span class="text-xs font-bold text-slate-400">3 <span class="text-rose-500">*</span></span>
                                     <input type="text" id="q5-skill-3" class="w-full bg-white border border-slate-200 rounded-lg px-3 py-1.5 text-xs focus:outline-none focus:ring-1 focus:ring-blue-500" placeholder="軟實力 / 溝通協調 / 必備軟體操作工具">
                                 </div>
                             </div>
@@ -303,14 +303,14 @@
                 <!-- Q6 & Q7 -->
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                     <div>
-                        <label class="block text-sm font-bold text-slate-700 mb-2">Q6. 選定你的頭號奮鬥目標：</label>
+                        <label class="block text-sm font-bold text-slate-700 mb-2">Q6. 選定你的頭號奮鬥目標： <span class="text-rose-500">*</span></label>
                         <div class="flex gap-2">
                             <input type="text" id="q6-uni" class="w-1/2 bg-slate-50 border border-slate-200 rounded-lg px-3 py-2 text-slate-800 text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-emerald-500" placeholder="目標大學 (如：國立陽明交通大學)">
                             <input type="text" id="q6-dept" class="w-1/2 bg-slate-50 border border-slate-200 rounded-lg px-3 py-2 text-slate-800 text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-emerald-500" placeholder="目標科系 (如：資訊工程學系)">
                         </div>
                     </div>
                     <div>
-                        <label class="block text-sm font-bold text-slate-700 mb-2">Q7. 該科系去年申請入學最低通過篩選標準（請至甄選會或大學問查詢）：</label>
+                        <label class="block text-sm font-bold text-slate-700 mb-2">Q7. 該科系去年申請入學最低通過篩選標準： <span class="text-rose-500">*</span></label>
                         <div class="flex gap-2">
                             <input type="text" id="q7-subject" class="w-1/2 bg-slate-50 border border-slate-200 rounded-lg px-3 py-2 text-slate-800 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500" placeholder="篩選採計科目 (如: 英, 數A, 自)">
                             <input type="text" id="q7-score" class="w-1/2 bg-slate-50 border border-slate-200 rounded-lg px-3 py-2 text-slate-800 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500" placeholder="去年錄取/通過級分 (如: 數A自共27級分)">
@@ -326,7 +326,7 @@
                         <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
                             <span class="text-xs font-bold text-slate-500 block mb-2">📊 【指標一：繁星保送關鍵——在校學業總成績】</span>
                             <div class="flex items-center gap-2">
-                                <span class="text-sm">我目前的在校「校排百分比」為：</span>
+                                <span class="text-sm">我目前的在校「校排百分比」為： <span class="text-rose-500">*</span></span>
                                 <input type="number" id="my-rank-percent" oninput="calculateGap()" class="w-16 bg-white border border-slate-200 rounded-lg px-2 py-1.5 text-center text-sm font-bold focus:outline-none focus:ring-1 focus:ring-emerald-500"> %
                             </div>
                         </div>
@@ -362,7 +362,7 @@
                                 <span id="my-sum-score" class="text-2xl font-black text-slate-800">0</span> <span class="text-xs text-slate-500 font-bold">級分</span>
                             </div>
                             <div class="bg-white/60 p-3 rounded-lg">
-                                <span class="text-slate-500 text-xs block">目標校系去年通過門檻總分：</span>
+                                <span class="text-slate-500 text-xs block">目標校系去年通過門檻總分： <span class="text-rose-500">*</span></span>
                                 <div class="flex gap-1 items-center mt-1">
                                     <input type="number" id="target-sum-score" oninput="calculateGap()" class="w-20 border border-emerald-300 rounded-lg px-2 py-1 text-center text-sm font-bold bg-white" placeholder="級分"> <span class="text-xs text-slate-500 font-bold">級分</span>
                                 </div>
@@ -403,7 +403,7 @@
                         <!-- 1. 特殊選才 -->
                         <div class="border border-slate-100 rounded-xl p-4 bg-slate-50/50 hover:bg-slate-50 transition-all">
                             <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-2">
-                                <span class="text-sm font-bold text-slate-800">1. 特殊選才（高三10~12月）</span>
+                                <span class="text-sm font-bold text-slate-800">1. 特殊選才（高三10~12月） <span class="text-rose-500">*</span></span>
                                 <span class="text-xs text-slate-400 font-medium">不看學測成績，極度看重「特殊才能、學術競賽」或「特殊身分經歷」</span>
                             </div>
                             <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -424,7 +424,7 @@
                         <!-- 2. 繁星推薦 -->
                         <div class="border border-slate-100 rounded-xl p-4 bg-slate-50/50 hover:bg-slate-50 transition-all">
                             <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-2">
-                                <span class="text-sm font-bold text-slate-800">2. 繁星推薦（高三3月）</span>
+                                <span class="text-sm font-bold text-slate-800">2. 繁星推薦（高三3月） <span class="text-rose-500">*</span></span>
                                 <span class="text-xs text-slate-400 font-medium">100% 依據「在校成績校排百分比」為主篩，學測分數僅為檢定/輔篩</span>
                             </div>
                             <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -448,7 +448,7 @@
                         <!-- 3. 個人申請 -->
                         <div class="border border-slate-100 rounded-xl p-4 bg-slate-50/50 hover:bg-slate-50 transition-all">
                             <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-2">
-                                <span class="text-sm font-bold text-slate-800">3. 個人申請（高三3~5月）</span>
+                                <span class="text-sm font-bold text-slate-800">3. 個人申請（高三3~5月） <span class="text-rose-500">*</span></span>
                                 <span class="text-xs text-slate-400 font-medium">最主流管道！第一階段篩學測級分，第二階段綜合看「學習歷程檔案」與面試複試</span>
                             </div>
                             <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -469,7 +469,7 @@
                         <!-- 4. 分發入學 -->
                         <div class="border border-slate-100 rounded-xl p-4 bg-slate-50/50 hover:bg-slate-50 transition-all">
                             <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-2">
-                                <span class="text-sm font-bold text-slate-800">4. 分發入學（高三7~8月）</span>
+                                <span class="text-sm font-bold text-slate-800">4. 分發入學（高三7~8月） <span class="text-rose-500">*</span></span>
                                 <span class="text-xs text-slate-400 font-medium">真槍實彈筆試對決！看分科測驗分數（部分校系會回推採計或檢定學測成績）</span>
                             </div>
                             <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -497,10 +497,10 @@
                         <!-- Q9 -->
                         <div>
                             <label class="block font-bold text-slate-700 mb-2">
-                                Q9. 學習歷程檔案體檢（針對「個人申請」深度體檢）：
+                                Q9. 學習歷程檔案體檢（針對「個人申請」深度體檢）： <span class="text-rose-500">*</span>
                             </label>
                             <p class="text-xs text-slate-400 mb-2">如果你要在明年的個人申請中進入這間目標校系，你高一高二累積的「課程學習成果」或「多元表現」中，哪一件作品或經歷最有說服力、與該科系關聯度最高？（如果完全沒有，你高三上學期打算用哪一門課的作品來亡羊補牢？）</p>
-                            <textarea id="q9-ans" rows="3" class="w-full bg-slate-50 border border-slate-200 rounded-lg p-3 text-slate-800 focus:outline-none focus:ring-2 focus:ring-violet-500 text-sm leading-relaxed" placeholder="說明 you 現有的優勢檔案作品，或是高三上學期具體要完成的補齊計劃..."></textarea>
+                            <textarea id="q9-ans" rows="3" class="w-full bg-slate-50 border border-slate-200 rounded-lg p-3 text-slate-800 focus:outline-none focus:ring-2 focus:ring-violet-500 text-sm leading-relaxed" placeholder="說明您現有的優勢檔案作品，或是高三上學期具體要完成的補齊計劃..."></textarea>
                         </div>
 
                         <!-- Q10 -->
@@ -514,11 +514,11 @@
                                     <span class="text-xs font-bold text-slate-500 block mb-2">📘 1. 學業強勢科目 / 補弱計劃</span>
                                     <div class="space-y-2 text-xs">
                                         <div class="flex items-center gap-1">
-                                            <span>我要在明年的學測</span>
-                                            <input type="text" id="plan-subject" class="w-20 border border-slate-200 rounded-lg px-2 py-1 text-center font-bold" placeholder="如：英文">
+                                            <span>我要在學測</span>
+                                            <input type="text" id="plan-subject" class="w-20 border border-slate-200 rounded-lg px-2 py-1 text-center font-bold" placeholder="如：英文"> <span class="text-rose-500">*</span>
                                             <span>科目上：</span>
                                         </div>
-                                        <input type="text" id="plan-study-detail" class="w-full border border-slate-200 rounded-lg px-2 py-1.5" placeholder="例如：每週一、四晚間固定完成一回學測模擬題並檢討">
+                                        <input type="text" id="plan-study-detail" class="w-full border border-slate-200 rounded-lg px-2 py-1.5" placeholder="例如：每週一、四晚間固定完成一回學測模擬題並檢討"> <span class="text-rose-500">*</span>
                                     </div>
                                 </div>
                                 <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
@@ -526,11 +526,11 @@
                                     <div class="space-y-2 text-xs">
                                         <div class="flex items-center gap-1 flex-wrap">
                                             <span>我決定每天使用手機/社群/手遊的時間限制在</span>
-                                            <input type="text" id="plan-phone" class="w-20 border border-slate-200 rounded-lg px-2 py-1 text-center font-bold" placeholder="例如：30分鐘">
+                                            <input type="text" id="plan-phone" class="w-20 border border-slate-200 rounded-lg px-2 py-1 text-center font-bold" placeholder="例如：30分鐘"> <span class="text-rose-500">*</span>
                                         </div>
                                         <div class="flex items-center gap-1 flex-wrap">
                                             <span>並且每天晚上回到家</span>
-                                            <input type="text" id="plan-time" class="w-20 border border-slate-200 rounded-lg px-2 py-1 text-center font-bold" placeholder="例如：8點前">
+                                            <input type="text" id="plan-time" class="w-20 border border-slate-200 rounded-lg px-2 py-1 text-center font-bold" placeholder="例如：8點前"> <span class="text-rose-500">*</span>
                                             <span>開始心無旁騖讀書。</span>
                                         </div>
                                     </div>
@@ -545,10 +545,10 @@
                             </label>
                             <p class="text-xs text-slate-400 mb-2">綜合「產業薪水」、「目標科系門檻」、「自己目前的模考戰力」，請給自己目前準備高三的成熟度打個分數：</p>
                             <div class="flex items-center gap-2 mb-3">
-                                <span class="text-xs font-bold text-slate-500">自我評估：</span>
+                                <span class="text-xs font-bold text-slate-500">自我評估： <span class="text-rose-500">*</span></span>
                                 <input type="number" id="self-score" class="w-16 border border-slate-200 rounded-lg py-1 text-center text-sm font-bold focus:ring-1 focus:ring-violet-500" placeholder="1~10"> <span class="text-xs text-slate-400">分（滿分 10 分）</span>
                             </div>
-                            <textarea id="q11-ans" rows="3" class="w-full bg-slate-50 border border-slate-200 rounded-lg p-3 text-slate-800 focus:outline-none focus:ring-2 focus:ring-violet-500 text-sm leading-relaxed" placeholder="為什麼你給自己這個分數？你認為自己現在最缺乏的，是學術實力、自控力、還是對未來的清晰目標？寫一段話，誠實地面對即將上戰場的自己。"></textarea>
+                            <textarea id="q11-ans" rows="3" class="w-full bg-slate-50 border border-slate-200 rounded-lg p-3 text-slate-800 focus:outline-none focus:ring-2 focus:ring-violet-500 text-sm leading-relaxed" placeholder="為什麼你給自己這個分數？你認為自己現在最缺乏的，是學術實力、自控力、還是對未來的清晰目標？寫一段話，誠實地面對即將上戰場的自己..."></textarea> <span class="text-rose-500">*</span>
                         </div>
                     </div>
                 </div>
@@ -767,7 +767,7 @@
                 }
             } catch (error) {
                 console.error("Firebase init failed:", error);
-                window.showAlert("雲端連線失敗", "請確認您填寫的 Firebase Config 格式是否正確。");
+                window.showAlert("雲端連線失敗 ❌", "請確認您填寫的 Firebase Config 格式是否正確。");
             }
         };
 
@@ -780,22 +780,51 @@
                 return;
             }
 
-            // Client Validation
+            // Client Validation (All fields must be filled!)
+            const targetFields = window.fields;
+            const targetRadios = window.radioGroups;
+
+            for (let i = 0; i < targetFields.length; i++) {
+                const id = targetFields[i];
+                const el = document.getElementById(id);
+                if (el && !el.value.trim()) {
+                    const label = window.findLabelForField(id);
+                    window.showAlert("請填寫所有欄位 ⚠️", `您的報告尚未填報完整：<br><br>請補填 <b>${label}</b> 欄位！`);
+                    setTimeout(() => {
+                        el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                        el.classList.add('ring-2', 'ring-rose-500');
+                        el.focus();
+                    }, 300);
+                    return; // Stop execution
+                }
+            }
+
+            for (let i = 0; i < targetRadios.length; i++) {
+                const groupName = targetRadios[i];
+                const radios = document.getElementsByName(groupName);
+                let checked = false;
+                radios.forEach(r => { if (r.checked) checked = true; });
+                if (!checked) {
+                    const label = window.findLabelForRadio(groupName);
+                    window.showAlert("請填寫所有欄位 ⚠️", `您的報告尚未填報完整：<br><br>請在 <b>${label}</b> 選擇一個適合您的評估選項！`);
+                    const firstRadio = radios[0];
+                    if (firstRadio) {
+                        setTimeout(() => {
+                            firstRadio.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                        }, 300);
+                    }
+                    return; // Stop execution
+                }
+            }
+
             const sClass = document.getElementById('student-class').value.trim();
             const sNum = document.getElementById('student-number').value.trim();
             const sName = document.getElementById('student-name').value.trim();
-            const targetDom = document.getElementById('target-domain').value.trim();
-
-            if (!sClass || !sNum || !sName || !targetDom) {
-                window.showAlert("基本資料不齊全", "請務必填寫第一區塊的 班級、座號、姓名 以及 探索領域 再行提交。");
-                return;
-            }
 
             const docId = `${sClass}-${sNum}-${sName}`;
             const studentData = window.getStudentFormData();
 
             try {
-                // Rule 1: Use specific structure: /artifacts/{appId}/public/data/{collectionName}
                 const appId = typeof __app_id !== 'undefined' ? __app_id : 'default-career-survey';
                 const submissionDocRef = doc(window.firebaseDb, 'artifacts', appId, 'public', 'data', 'submissions', docId);
                 
@@ -807,7 +836,7 @@
                 window.showAlert("提交成功 🎉", "您的生涯探索數據已安全上載至老師的雲端資料庫中！");
             } catch (error) {
                 console.error("Submit to cloud failed:", error);
-                window.showAlert("提交失敗", "上傳雲端時發生錯誤，請聯絡老師，或使用「導出備份 JSON 檔」以手動呈交。");
+                window.showAlert("提交失敗 ❌", "上傳雲端時發生錯誤，請聯絡老師，或使用「導出備份 JSON 檔」以手動呈交。");
             }
         };
 
@@ -838,10 +867,10 @@
     <script>
         // Global State variables
         window.currentView = 'student';
-        window.allSubmissions = []; // Array of student data submissions (either local imported or cloud real-time)
+        window.allSubmissions = []; // Array of student data submissions
 
-        // List of all form field IDs for data persistence
-        const fields = [
+        // List of all form field IDs for data persistence (Attached to window to avoid module scoping issues)
+        window.fields = [
             'student-class', 'student-number', 'student-name', 'target-domain',
             'q1-ans', 'q2-112-avg', 'q2-112-med', 'q2-113-avg', 'q2-113-med', 'q2-114-avg', 'q2-114-med',
             'q3-industry', 'q4-salary', 'q5-job-title', 'q5-skill-1', 'q5-skill-2', 'q5-skill-3',
@@ -852,7 +881,64 @@
         ];
 
         // Pathway radio groups
-        const radioGroups = ['pathway-ts', 'pathway-star', 'pathway-apply', 'pathway-dist'];
+        window.radioGroups = ['pathway-ts', 'pathway-star', 'pathway-apply', 'pathway-dist'];
+
+        // Helper: Find labels for Validation Alerts
+        window.findLabelForField = function(id) {
+            const mapping = {
+                'student-class': '基本資料：班級',
+                'student-number': '基本資料：座號',
+                'student-name': '基本資料：姓名',
+                'target-domain': '基本資料：興趣領域',
+                'q1-ans': '任務一：Q1 中位數與平均數解釋',
+                'q2-112-avg': '任務一：112年平均年薪',
+                'q2-112-med': '任務一：112年中位年薪',
+                'q2-113-avg': '任務一：113年平均年薪',
+                'q2-113-med': '任務一：113年中位年薪',
+                'q2-114-avg': '任務一：114年平均年薪',
+                'q2-114-med': '任務一：114年中位年薪',
+                'q3-industry': '任務一：深度分析特定產業',
+                'q4-salary': '任務一：產業中位數年薪',
+                'q5-job-title': '任務一：嚮往職缺名稱',
+                'q5-skill-1': '任務一：職缺關鍵能力1',
+                'q5-skill-2': '任務一：職缺關鍵能力2',
+                'q5-skill-3': '任務一：職缺關鍵能力3',
+                'q6-uni': '任務二：目標大學',
+                'q6-dept': '任務二：目標科系',
+                'q7-subject': '任務二：篩選採計科目',
+                'q7-score': '任務二：去年篩選門檻級分',
+                'my-rank-percent': '任務二：繁星在校校排百分比',
+                'mock-sub-1': '任務二：模擬考科目1名稱',
+                'mock-score-1': '任務二：模擬考科目1成績',
+                'mock-sub-2': '任務二：模擬考科目2名稱',
+                'mock-score-2': '任務二：模擬考科目2成績',
+                'mock-sub-3': '任務二：模擬考科目3名稱',
+                'mock-score-3': '任務二：模擬考科目3成績',
+                'target-sum-score': '任務二：目標校系去年通過分數',
+                'pathway-ts-reason': '任務三：特殊選才原因說明',
+                'pathway-star-reason': '任務三：繁星推薦原因說明',
+                'pathway-apply-reason': '任務三：個人申請原因說明',
+                'pathway-dist-reason': '任務三：分發入學原因說明',
+                'q9-ans': '任務三：學習歷程檔案深度體檢',
+                'plan-subject': '任務三：強勢學科補弱科目',
+                'plan-study-detail': '任務三：學業補強執行細節',
+                'plan-phone': '任務三：手機使用限制時間',
+                'plan-time': '任務三：開始專心讀書時間',
+                'self-score': '任務三：準備成熟度自我評分',
+                'q11-ans': '任務三：誠實自我診斷與未來期許'
+            };
+            return mapping[id] || id;
+        }
+
+        window.findLabelForRadio = function(groupName) {
+            const mapping = {
+                'pathway-ts': '任務三：1.特殊選才適合度評估',
+                'pathway-star': '任務三：2.繁星推薦適合度評估',
+                'pathway-apply': '任務三：3.個人申請適合度評估',
+                'pathway-dist': '任務三：4.分發入學適合度評估'
+            };
+            return mapping[groupName] || groupName;
+        }
 
         // Toggle Toolbox Visibility
         function toggleToolbox() {
@@ -869,27 +955,36 @@
 
         // Initial Load and Auto-Save Sync
         window.onload = function() {
+            let hasSavedDraft = false;
+
             // Restore answers from LocalStorage
-            fields.forEach(id => {
+            window.fields.forEach(id => {
                 const element = document.getElementById(id);
                 if (element) {
                     const savedVal = localStorage.getItem(id);
-                    if (savedVal !== null) {
+                    if (savedVal !== null && savedVal !== '') {
                         element.value = savedVal;
+                        hasSavedDraft = true;
                     }
                     // Attach change listener to save instantly
                     element.addEventListener('input', () => {
                         localStorage.setItem(id, element.value);
+                        if (element.value.trim() !== '') {
+                            element.classList.remove('ring-2', 'ring-rose-500');
+                        }
                     });
                 }
             });
 
-            radioGroups.forEach(groupName => {
+            window.radioGroups.forEach(groupName => {
                 const radios = document.getElementsByName(groupName);
                 const savedVal = localStorage.getItem(groupName);
-                if (savedVal !== null) {
+                if (savedVal !== null && savedVal !== '') {
                     radios.forEach(r => {
-                        if (r.value === savedVal) r.checked = true;
+                        if (r.value === savedVal) {
+                            r.checked = true;
+                            hasSavedDraft = true;
+                        }
                     });
                 }
                 radios.forEach(r => {
@@ -898,6 +993,18 @@
                     });
                 });
             });
+
+            // If draft loaded, show smooth floating banner
+            if (hasSavedDraft) {
+                const toast = document.createElement('div');
+                toast.className = "fixed bottom-5 left-5 bg-emerald-600 text-white text-xs font-bold px-4 py-3 rounded-xl shadow-2xl z-50 flex items-center gap-2 animate-bounce no-print";
+                toast.innerHTML = "✨ <b>已自動還原您上次填寫到一半的草稿進度，請繼續完成！</b>";
+                document.body.appendChild(toast);
+                setTimeout(() => {
+                    toast.classList.add('transition-opacity', 'duration-500', 'opacity-0');
+                    setTimeout(() => toast.remove(), 500);
+                }, 4000);
+            }
 
             calculateGap();
         };
@@ -935,15 +1042,15 @@
         }
 
         // Get Form Data Object
-        function getStudentFormData() {
+        window.getStudentFormData = function() {
             const data = {};
-            fields.forEach(id => {
+            window.fields.forEach(id => {
                 const element = document.getElementById(id);
                 if (element) {
                     data[id] = element.value;
                 }
             });
-            radioGroups.forEach(groupName => {
+            window.radioGroups.forEach(groupName => {
                 const radios = document.getElementsByName(groupName);
                 let selected = "";
                 radios.forEach(r => {
@@ -954,20 +1061,21 @@
             return data;
         }
 
-        // Clear Local Storage with Confirmation
+        // Clear ONLY survey inputs, preserving database configuration
         function clearData() {
-            window.showConfirm("確定要清除所有資料嗎？", "這會徹底洗掉這台電腦上所有的暫存填答內容且無法還原！", () => {
-                localStorage.clear();
-                fields.forEach(id => {
+            window.showConfirm("確定要清除所有填答資料嗎？", "這會徹底洗掉這台電腦上所有的填答內容，但會保留您的 Firebase 雲端連結設定。", () => {
+                window.fields.forEach(id => {
+                    localStorage.removeItem(id);
                     const el = document.getElementById(id);
                     if (el) el.value = '';
                 });
-                radioGroups.forEach(groupName => {
+                window.radioGroups.forEach(groupName => {
+                    localStorage.removeItem(groupName);
                     const radios = document.getElementsByName(groupName);
                     radios.forEach(r => r.checked = false);
                 });
                 calculateGap();
-                window.showAlert("清除成功", "您的本機暫存資料已清除乾淨。");
+                window.showAlert("清除成功", "您的填答草稿資料已成功清空。");
             });
         }
 
@@ -977,7 +1085,7 @@
             const sNum = document.getElementById('student-number').value.trim() || "00";
             const sName = document.getElementById('student-name').value.trim() || "無名氏";
             
-            const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(getStudentFormData(), null, 2));
+            const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(window.getStudentFormData(), null, 2));
             const downloadAnchor = document.createElement('a');
             downloadAnchor.setAttribute("href", dataStr);
             downloadAnchor.setAttribute("download", `生涯導航_${sClass}_${sNum}_${sName}.json`);
@@ -1044,9 +1152,9 @@
                 "嚮往職缺", "必備技能一", "必備技能二", "必備技能三", "目標大學", "目標科系", 
                 "採計科目", "去年篩選標準", "校排百分比", "模考1科目", "模考1級分", 
                 "模考2科目", "模考2級分", "模考3科目", "模考3級分", "目標通過分數", 
-                "特選選才", "特選看法", "繁星推薦", "繁星看法", "個人申請", "個申看法", 
-                "分發入學", "分發看法", "學習歷程體檢", "強勢學科", "學期細節", 
-                "手機時間", "讀書時間", "自我成熟度評分", "自我診斷期許"
+                "特殊選才評價", "特殊選才理由說明", "繁星推薦評價", "繁星推薦理由說明", 
+                "個人申請評價", "個人申請理由說明", "分發入學評價", "分發入學理由說明", 
+                "學習歷程體檢", "強勢學科", "學期細節", "手機時間", "讀書時間", "自我成熟度評分", "自我診斷期許"
             ];
 
             const csvRows = [headers.join(",")];
@@ -1102,7 +1210,7 @@
                 csvRows.push(row.join(","));
             });
 
-            // Add UTF-8 BOM marker (\uFEFF) to make sure Excel decodes Chinese characters flawlessly
+            // UTF-8 BOM to prevent Excel display corruption
             const csvContent = "\uFEFF" + csvRows.join("\n");
             const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
             const url = URL.createObjectURL(blob);
@@ -1153,9 +1261,9 @@
         window.renderTeacherDashboard = function() {
             const tableBody = document.getElementById('submissions-table-body');
             const totalSpan = document.getElementById('stat-total-submissions');
-            const gapSpan = document.getElementById('stat-avg-gap'); // Space Typo Fixed!
+            const gapSpan = document.getElementById('stat-avg-gap');
             const domainSpan = document.getElementById('stat-top-domain');
-            const pathSpan = document.getElementById('stat-top-pathway'); // Space Typo Fixed!
+            const pathSpan = document.getElementById('stat-top-pathway');
 
             const subs = window.allSubmissions;
             totalSpan.innerText = subs.length;
@@ -1380,7 +1488,7 @@
             let configInput = document.getElementById('firebase-config-input').value.trim();
             if (!configInput) {
                 localStorage.removeItem('custom_firebase_config');
-                window.showAlert("已清除雲端設定", "重新整理頁面後，雲端連接將重設。");
+                window.showAlert("已清除雲端設定 🧹", "重新整理頁面後，雲端連接將重設。");
                 window.closeCloudConfigModal();
                 return;
             }
@@ -1407,7 +1515,7 @@
                 const standardJson = JSON.stringify(parsed, null, 2);
                 localStorage.setItem('custom_firebase_config', standardJson);
                 window.closeCloudConfigModal();
-                window.showAlert("設定已儲存 🎉", "重新載入或連接中...");
+                window.showAlert("設定已儲存 🎉", "正在為您連線...");
                 window.initFirebase(standardJson);
             } catch (err) {
                 console.error("Config parse error:", err);

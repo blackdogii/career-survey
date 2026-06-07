@@ -40,7 +40,7 @@
                 <span class="text-2xl">🎯</span>
                 <div>
                     <h1 class="font-bold text-base sm:text-lg leading-tight">準高三生涯導航系統 v2.0</h1>
-                    <p class="text-xs text-slate-400">自主生涯與多元升學路徑探索</p>
+                    <p class="text-xs text-slate-400">生涯與升學探索</p>
                 </div>
             </div>
             <div class="flex items-center gap-2 flex-wrap">
@@ -63,14 +63,14 @@
             <span class="bg-indigo-500/40 text-indigo-200 text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider border border-indigo-400/20">高二升高三 · 自主探索與升學實力比對學習單</span>
             <h2 class="text-3xl md:text-5xl font-black mt-4 tracking-tight drop-shadow-sm">親手拆解你的「理想與現實」</h2>
             <p class="text-indigo-100 mt-3 text-sm md:text-base max-w-2xl mx-auto leading-relaxed">
-                這不是一份應付了事的心得，而是引導你大考的戰略方針！
+                這不是一份應付了事的心得，而是引導你踏出最精準的大考戰略方針！
             </p>
             
             <!-- Collapsible Explorer Toolbox -->
             <div class="mt-8 bg-slate-800/80 backdrop-blur border border-slate-700/50 rounded-xl p-5 max-w-3xl mx-auto text-left shadow-2xl">
                 <div class="flex items-center justify-between border-b border-slate-700/80 pb-3 mb-3 cursor-pointer" onclick="toggleToolbox()">
                     <h3 class="font-bold text-sm text-slate-200 flex items-center gap-2">
-                        <span>🧭</span> 準高三生涯探索萬用工具箱 (點選展開/收起官網入口)
+                        <span>🧭</span> 生涯探索萬用工具箱 (點選展開/收起官網入口)
                     </h3>
                     <span id="toolbox-toggle-icon" class="text-xs text-slate-400">▼ 收起</span>
                 </div>
@@ -250,30 +250,46 @@
                     </div>
 
                     <!-- Q5 -->
-                    <div class="mb-4">
-                        <div class="flex justify-between items-center mb-2">
-                            <label class="block text-sm font-bold text-slate-700">Q5. 在該產業中，你未來最嚮往的「具體職缺」與其硬核技能調查：</label>
-                            <span class="no-print"><a href="https://www.104.com.tw/jobs/main/" target="_blank" class="text-xs text-blue-500 hover:underline">🔗 104 職缺查詢 ↗</a></span>
+                <div class="mb-4">
+                    <div class="flex justify-between items-center mb-2">
+                        <label class="block text-sm font-bold text-slate-700">Q5. 在該產業中，你未來最嚮往的「具體職缺」與其硬核技能調查：</label>
+                        <span class="no-print"><a href="https://www.104.com.tw/jobs/main/" target="_blank" class="text-xs text-blue-500 hover:underline">🔗 104 職缺查詢 ↗</a></span>
+                    </div>
+                    <div class="bg-slate-50 p-4 rounded-xl border border-slate-100 space-y-3">
+                        <div class="flex flex-col sm:flex-row items-start sm:items-center gap-2">
+                            <span class="text-xs font-bold text-slate-500 shrink-0">嚮往職缺名稱： <span class="text-rose-500">*</span></span>
+                            <input type="text" id="q5-job-title" class="w-full sm:w-64 bg-white border border-slate-200 rounded-lg px-3 py-1.5 text-xs font-semibold focus:outline-none focus:ring-1 focus:ring-blue-500" placeholder="例如：IC設計工程師、理財規劃分析師、臨床護理師">
                         </div>
-                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-100 space-y-3">
-                            <div class="flex flex-col sm:flex-row items-start sm:items-center gap-2">
-                                <span class="text-xs font-bold text-slate-500 shrink-0">嚮往職缺名稱： <span class="text-rose-500">*</span></span>
-                                <input type="text" id="q5-job-title" class="w-full sm:w-64 bg-white border border-slate-200 rounded-lg px-3 py-1.5 text-xs font-semibold focus:outline-none focus:ring-1 focus:ring-blue-500" placeholder="例如：IC設計工程師、理財規劃分析師、臨床護理師">
+                        <p class="text-xs text-slate-400">請從求職網站的該職務說明中，整理出工作要求的 **三大關鍵能力、限制科系或必備證照**：</p>
+                        <div class="space-y-2">
+                            <div class="flex items-center gap-2">
+                                <span class="text-xs font-bold text-slate-400">1 <span class="text-rose-500">*</span></span>
+                                <input type="text" id="q5-skill-1" class="w-full bg-white border border-slate-200 rounded-lg px-3 py-1.5 text-xs focus:outline-none focus:ring-1 focus:ring-blue-500" placeholder="專業學科背景（如：資工、電機相關）/ 特定程式語言 or 設計能力">
                             </div>
-                            <p class="text-xs text-slate-400">請從求職網站的該職務說明中，整理出工作要求的 **三大關鍵能力、限制科系或必備證照**：</p>
-                            <div class="space-y-2">
-                                <div class="flex items-center gap-2">
-                                    <span class="text-xs font-bold text-slate-400">1 <span class="text-rose-500">*</span></span>
-                                    <input type="text" id="q5-skill-1" class="w-full bg-white border border-slate-200 rounded-lg px-3 py-1.5 text-xs focus:outline-none focus:ring-1 focus:ring-blue-500" placeholder="專業學科背景（如：資工、電機相關）/ 特定程式語言或設計能力">
-                                </div>
-                                <div class="flex items-center gap-2">
-                                    <span class="text-xs font-bold text-slate-400">2 <span class="text-rose-500">*</span></span>
-                                    <input type="text" id="q5-skill-2" class="w-full bg-white border border-slate-200 rounded-lg px-3 py-1.5 text-xs focus:outline-none focus:ring-1 focus:ring-blue-500" placeholder="證照、英語多益門檻需求或執業執照一">
-                                </div>
-                                <div class="flex items-center gap-2">
-                                    <span class="text-xs font-bold text-slate-400">3 <span class="text-rose-500">*</span></span>
-                                    <input type="text" id="q5-skill-3" class="w-full bg-white border border-slate-200 rounded-lg px-3 py-1.5 text-xs focus:outline-none focus:ring-1 focus:ring-blue-500" placeholder="軟實力 / 溝通協調 / 必備軟體操作工具">
-                                </div>
+                            <div class="flex items-center gap-2">
+                                <span class="text-xs font-bold text-slate-400">2 <span class="text-rose-500">*</span></span>
+                                <input type="text" id="q5-skill-2" class="w-full bg-white border border-slate-200 rounded-lg px-3 py-1.5 text-xs focus:outline-none focus:ring-1 focus:ring-blue-500" placeholder="證照、英語多益門檻需求或執業執照一">
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span class="text-xs font-bold text-slate-400">3 <span class="text-rose-500">*</span></span>
+                                <input type="text" id="q5-skill-3" class="w-full bg-white border border-slate-200 rounded-lg px-3 py-1.5 text-xs focus:outline-none focus:ring-1 focus:ring-blue-500" placeholder="軟實力 / 溝通協調 / 必備軟體操作工具">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border-t border-dashed border-slate-200 pt-6 mt-6">
+                    <label class="block text-sm font-bold text-slate-700 mb-1">📸 任務一佐證：請上傳「主計處薪情平臺」或「勞動部大專生導航」的查詢畫面截圖 <span class="text-rose-500">*</span></label>
+                    <p class="text-xs text-slate-400 mb-3">提示：手機截圖直接上傳即可。系統會自動進行輕量化無損壓縮以確保雲端備份效率。</p>
+                    <div class="bg-slate-50 p-4 rounded-xl border border-dashed border-slate-300 flex flex-col md:flex-row items-center gap-6">
+                        <div class="w-full md:w-1/2">
+                            <input type="file" accept="image/*" onchange="handleScreenshotUpload(event, 'screenshot-1', 'preview-1')" class="block w-full text-xs text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-xl file:border-0 file:text-xs file:font-bold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100 cursor-pointer">
+                            <input type="hidden" id="screenshot-1">
+                        </div>
+                        <div class="w-full md:w-1/2 flex justify-center">
+                            <div class="relative max-w-full">
+                                <img id="preview-1" class="max-h-40 rounded-lg shadow-md border border-slate-200 hidden" alt="任務一截圖預覽">
+                                <span id="placeholder-1" class="text-xs text-slate-400 font-medium italic block py-4">📷 尚未上傳截圖</span>
                             </div>
                         </div>
                     </div>
@@ -372,6 +388,23 @@
                             <span class="text-xs font-bold text-emerald-800">📊 戰力雷達診斷：</span>
                             <div id="gap-badge" class="px-4 py-1.5 rounded-full text-xs font-bold text-center inline-block bg-slate-200 text-slate-700 shadow-sm">
                                 請輸入模考分數與目標分數進行診斷
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border-t border-dashed border-slate-200 pt-6 mt-6">
+                    <label class="block text-sm font-bold text-slate-700 mb-1">📸 任務二佐證：請上傳「ColleGo!」或「大學問」目標校系的考科篩選/錄取門檻截圖 <span class="text-rose-500">*</span></label>
+                    <p class="text-xs text-slate-400 mb-3">提示：手機截圖直接上傳即可。佐證截圖會同步編入最終匯出的 PDF 報告中。</p>
+                    <div class="bg-slate-50 p-4 rounded-xl border border-dashed border-slate-300 flex flex-col md:flex-row items-center gap-6">
+                        <div class="w-full md:w-1/2">
+                            <input type="file" accept="image/*" onchange="handleScreenshotUpload(event, 'screenshot-2', 'preview-2')" class="block w-full text-xs text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-xl file:border-0 file:text-xs file:font-bold file:bg-emerald-50 file:text-emerald-700 hover:file:bg-emerald-100 cursor-pointer">
+                            <input type="hidden" id="screenshot-2">
+                        </div>
+                        <div class="w-full md:w-1/2 flex justify-center">
+                            <div class="relative max-w-full">
+                                <img id="preview-2" class="max-h-40 rounded-lg shadow-md border border-slate-200 hidden" alt="任務二截圖預覽">
+                                <span id="placeholder-2" class="text-xs text-slate-400 font-medium italic block py-4">📷 尚未上傳截圖</span>
                             </div>
                         </div>
                     </div>
@@ -874,9 +907,11 @@
             'student-class', 'student-number', 'student-name', 'target-domain',
             'q1-ans', 'q2-112-avg', 'q2-112-med', 'q2-113-avg', 'q2-113-med', 'q2-114-avg', 'q2-114-med',
             'q3-industry', 'q4-salary', 'q5-job-title', 'q5-skill-1', 'q5-skill-2', 'q5-skill-3',
+            'screenshot-1', // Added Task 1 screenshot hidden field
             'q6-uni', 'q6-dept', 'q7-subject', 'q7-score',
             'my-rank-percent', 'mock-sub-1', 'mock-score-1', 'mock-sub-2', 'mock-score-2', 'mock-sub-3', 'mock-score-3',
-            'target-sum-score', 'pathway-ts-reason', 'pathway-star-reason', 'pathway-apply-reason', 'pathway-dist-reason',
+            'target-sum-score', 'screenshot-2', // Added Task 2 screenshot hidden field
+            'pathway-ts-reason', 'pathway-star-reason', 'pathway-apply-reason', 'pathway-dist-reason',
             'q9-ans', 'plan-subject', 'plan-study-detail', 'plan-phone', 'plan-time', 'self-score', 'q11-ans'
         ];
 
@@ -903,6 +938,7 @@
                 'q5-skill-1': '任務一：職缺關鍵能力1',
                 'q5-skill-2': '任務一：職缺關鍵能力2',
                 'q5-skill-3': '任務一：職缺關鍵能力3',
+                'screenshot-1': '任務一：官方查詢佐證截圖',
                 'q6-uni': '任務二：目標大學',
                 'q6-dept': '任務二：目標科系',
                 'q7-subject': '任務二：篩選採計科目',
@@ -915,6 +951,7 @@
                 'mock-sub-3': '任務二：模擬考科目3名稱',
                 'mock-score-3': '任務二：模擬考科目3成績',
                 'target-sum-score': '任務二：目標校系去年通過分數',
+                'screenshot-2': '任務二：目標校系門檻佐證截圖',
                 'pathway-ts-reason': '任務三：特殊選才原因說明',
                 'pathway-star-reason': '任務三：繁星推薦原因說明',
                 'pathway-apply-reason': '任務三：個人申請原因說明',
@@ -933,7 +970,7 @@
         window.findLabelForRadio = function(groupName) {
             const mapping = {
                 'pathway-ts': '任務三：1.特殊選才適合度評估',
-                'pathway-star': '任務三：2.繁星推薦適合度評估',
+                'pathway-star': '任務裝：2.繁星推薦適合度評估',
                 'pathway-apply': '任務三：3.個人申請適合度評估',
                 'pathway-dist': '任務三：4.分發入學適合度評估'
             };
@@ -953,6 +990,54 @@
             }
         }
 
+        // Universal Smart Image Uploader & Compressor
+        window.handleScreenshotUpload = function(event, targetInputId, targetPreviewId) {
+            const file = event.target.files[0];
+            if (!file) return;
+
+            const placeholderId = targetPreviewId.replace('preview', 'placeholder');
+            const placeholderEl = document.getElementById(placeholderId);
+            const previewEl = document.getElementById(targetPreviewId);
+            const inputEl = document.getElementById(targetInputId);
+
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                const img = new Image();
+                img.onload = function() {
+                    // Create HTML5 Canvas to resize and compress the image
+                    const canvas = document.createElement('canvas');
+                    const MAX_WIDTH = 500; // Optimal width for report embedding
+                    let width = img.width;
+                    let height = img.height;
+
+                    if (width > MAX_WIDTH) {
+                        height = Math.round((height * MAX_WIDTH) / width);
+                        width = MAX_WIDTH;
+                    }
+
+                    canvas.width = width;
+                    canvas.height = height;
+
+                    const ctx = canvas.getContext('2d');
+                    ctx.drawImage(img, 0, 0, width, height);
+
+                    // Convert to optimized compressed JPEG string
+                    const compressedBase64 = canvas.toDataURL('image/jpeg', 0.6); // 60% quality is highly compressed yet clear
+                    
+                    // Update state & LocalStorage
+                    inputEl.value = compressedBase64;
+                    localStorage.setItem(targetInputId, compressedBase64);
+                    
+                    // Update UI previews
+                    previewEl.src = compressedBase64;
+                    previewEl.classList.remove('hidden');
+                    if (placeholderEl) placeholderEl.classList.add('hidden');
+                };
+                img.src = e.target.result;
+            };
+            reader.readAsDataURL(file);
+        };
+
         // Initial Load and Auto-Save Sync
         window.onload = function() {
             let hasSavedDraft = false;
@@ -965,6 +1050,18 @@
                     if (savedVal !== null && savedVal !== '') {
                         element.value = savedVal;
                         hasSavedDraft = true;
+
+                        // Restore image previews if they are loaded
+                        if (id.startsWith('screenshot-')) {
+                            const num = id.split('-')[1];
+                            const previewEl = document.getElementById(`preview-${num}`);
+                            const placeholderEl = document.getElementById(`placeholder-${num}`);
+                            if (previewEl && savedVal) {
+                                previewEl.src = savedVal;
+                                previewEl.classList.remove('hidden');
+                                if (placeholderEl) placeholderEl.classList.add('hidden');
+                            }
+                        }
                     }
                     // Attach change listener to save instantly
                     element.addEventListener('input', () => {
@@ -1074,6 +1171,15 @@
                     const radios = document.getElementsByName(groupName);
                     radios.forEach(r => r.checked = false);
                 });
+                
+                // Reset file preview elements
+                ['1','2'].forEach(num => {
+                    const preview = document.getElementById(`preview-${num}`);
+                    const placeholder = document.getElementById(`placeholder-${num}`);
+                    if (preview) preview.classList.add('hidden');
+                    if (placeholder) placeholder.classList.remove('hidden');
+                });
+
                 calculateGap();
                 window.showAlert("清除成功", "您的填答草稿資料已成功清空。");
             });
@@ -1149,9 +1255,9 @@
             const headers = [
                 "班級", "座號", "姓名", "探索領域", "Q1看法", "112平均", "112中位", 
                 "113平均", "113中位", "114平均", "114中位", "目標分析產業", "產業中位年薪", 
-                "嚮往職缺", "必備技能一", "必備技能二", "必備技能三", "目標大學", "目標科系", 
+                "嚮往職缺", "必備技能一", "必備技能二", "必備技能三", "任務一截圖狀態", "目標大學", "目標科系", 
                 "採計科目", "去年篩選標準", "校排百分比", "模考1科目", "模考1級分", 
-                "模考2科目", "模考2級分", "模考3科目", "模考3級分", "目標通過分數", 
+                "模考2科目", "模考2級分", "模考3科目", "模考3級分", "目標通過分數", "任務二截圖狀態",
                 "特殊選才評價", "特殊選才理由說明", "繁星推薦評價", "繁星推薦理由說明", 
                 "個人申請評價", "個人申請理由說明", "分發入學評價", "分發入學理由說明", 
                 "學習歷程體檢", "強勢學科", "學期細節", "手機時間", "讀書時間", "自我成熟度評分", "自我診斷期許"
@@ -1178,6 +1284,7 @@
                     sub['q5-skill-1'] || "",
                     sub['q5-skill-2'] || "",
                     sub['q5-skill-3'] || "",
+                    sub['screenshot-1'] ? "已上傳" : "未上傳", // Prevent Base64 bloat in CSV cells
                     sub['q6-uni'] || "",
                     sub['q6-dept'] || "",
                     sub['q7-subject'] || "",
@@ -1190,6 +1297,7 @@
                     sub['mock-sub-3'] || "",
                     sub['mock-score-3'] || "",
                     sub['target-sum-score'] || "",
+                    sub['screenshot-2'] ? "已上傳" : "未上傳", // Prevent Base64 bloat in CSV cells
                     sub['pathway-ts'] || "",
                     sub['pathway-ts-reason'] || "",
                     sub['pathway-star'] || "",
@@ -1326,11 +1434,14 @@
                     else gapClass = "text-rose-500 font-bold";
                 }
 
+                // Screenshot indicator
+                const hasImages = (sub['screenshot-1'] || sub['screenshot-2']) ? ' 🖼️' : '';
+
                 const tr = document.createElement('tr');
                 tr.className = "hover:bg-slate-50/80 transition-colors";
                 tr.innerHTML = `
                     <td class="px-4 py-3 font-semibold text-slate-800">${sub['student-class'] || 'X'}-${sub['student-number'] || 'X'}</td>
-                    <td class="px-4 py-3 font-bold text-slate-900">${sub['student-name'] || '未填寫'}</td>
+                    <td class="px-4 py-3 font-bold text-slate-900">${sub['student-name'] || '未填寫'}${hasImages}</td>
                     <td class="px-4 py-3 text-slate-500">${sub['target-domain'] || '無'}</td>
                     <td class="px-4 py-3 text-slate-700">
                         <span class="font-bold">${sub['q6-uni'] || ''}</span> ${sub['q6-dept'] || '無'} 
@@ -1367,6 +1478,10 @@
             const sub = window.allSubmissions[index];
             if (!sub) return;
 
+            // Image tag markup builder
+            const img1Markup = sub['screenshot-1'] ? `<div class="mt-2"><span class="font-bold block text-slate-500 mb-1">任務一佐證截圖：</span><img src="${sub['screenshot-1']}" class="max-h-48 rounded border shadow-sm"></div>` : '<div class="text-rose-500 italic">⚠️ 任務一無上傳佐證截圖</div>';
+            const img2Markup = sub['screenshot-2'] ? `<div class="mt-2"><span class="font-bold block text-slate-500 mb-1">任務二佐證截圖：</span><img src="${sub['screenshot-2']}" class="max-h-48 rounded border shadow-sm"></div>` : '<div class="text-rose-500 italic">⚠️ 任務二無上傳佐證截圖</div>';
+
             let contentHtml = `
                 <div class="space-y-4 text-xs text-slate-700">
                     <div class="grid grid-cols-2 gap-2 border-b pb-2">
@@ -1382,8 +1497,18 @@
                     </div>
                     <div><strong>Q3/Q4. 興趣產業與薪水：</strong> ${sub['q3-industry']} (中位年薪：${sub['q4-salary']} 萬)</div>
                     <div><strong>Q5. 職缺硬技能：</strong> ${sub['q5-job-title']} <br> 1: ${sub['q5-skill-1']}<br> 2: ${sub['q5-skill-2']}<br> 3: ${sub['q5-skill-3']}</div>
+                    
+                    <div class="bg-slate-50 p-2.5 rounded-lg border border-slate-200 mt-2">
+                        ${img1Markup}
+                    </div>
+
                     <div class="border-t pt-2"><strong>Q6/Q7. 目標校系去年門檻：</strong> ${sub['q6-uni']} ${sub['q6-dept']} (標準：${sub['q7-score']})</div>
                     <div><strong>Q8. 校排百分比 / 採計考科：</strong> 在校 ${sub['my-rank-percent'] || '--'}% | 目標分數 ${sub['target-sum-score'] || '--'}級分</div>
+                    
+                    <div class="bg-slate-50 p-2.5 rounded-lg border border-slate-200 mt-2">
+                        ${img2Markup}
+                    </div>
+
                     <div class="border-t pt-2"><strong>Q9. 學習歷程檔案體檢：</strong> ${sub['q9-ans']}</div>
                     <div><strong>Q10. 高三強勢補強/時間管理：</strong> 在 ${sub['plan-subject']} 科上：${sub['plan-study-detail']} <br>手機限制：${sub['plan-phone']} | 讀書時間：${sub['plan-time']}</div>
                     <div><strong>Q11. 自我成熟分數打分：</strong> ${sub['self-score']} 分 / 理由：${sub['q11-ans']}</div>

@@ -6,9 +6,8 @@
     <title>準高三生涯導航與數據探索報告系統</title>
     <!-- Tailwind CSS for Responsive Premium Styling -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Phospor Icons or FontAwesome for richer visual look -->
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght=300;400;500;700;900&display=swap');
         body {
             font-family: 'Noto Sans TC', sans-serif;
         }
@@ -64,7 +63,7 @@
             <span class="bg-indigo-500/40 text-indigo-200 text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider border border-indigo-400/20">高二升高三 · 自主探索與升學實力比對學習單</span>
             <h2 class="text-3xl md:text-5xl font-black mt-4 tracking-tight drop-shadow-sm">親手拆解你的「理想與現實」</h2>
             <p class="text-indigo-100 mt-3 text-sm md:text-base max-w-2xl mx-auto leading-relaxed">
-                這不是一份應付了事的心得。我們提供熱門連結，引導你踏出最精準的大考戰略方針！
+                這不是一份應付了事的心得，是引導你踏出最精準的大考戰略方針！
             </p>
             
             <!-- Collapsible Explorer Toolbox -->
@@ -660,7 +659,7 @@
         </div>
     </main>
 
-    <!-- CUSTOM DIALOG MODALS (Replaces alert/confirm for better iframe compatibility) -->
+    <!-- CUSTOM DIALOG MODALS -->
     <div id="custom-modal" class="fixed inset-0 bg-slate-950/60 backdrop-blur-sm flex items-center justify-center z-50 hidden no-print">
         <div class="bg-white rounded-2xl max-w-md w-full p-6 shadow-2xl border border-slate-100 m-4 scale-95 transition-all duration-300">
             <h3 id="modal-title" class="text-lg font-black text-slate-900">提示</h3>
@@ -1154,9 +1153,9 @@
         window.renderTeacherDashboard = function() {
             const tableBody = document.getElementById('submissions-table-body');
             const totalSpan = document.getElementById('stat-total-submissions');
-            const_gapSpan = document.getElementById('stat-avg-gap');
+            const gapSpan = document.getElementById('stat-avg-gap'); // Space Typo Fixed!
             const domainSpan = document.getElementById('stat-top-domain');
-            const_pathSpan = document.getElementById('stat-top-pathway');
+            const pathSpan = document.getElementById('stat-top-pathway'); // Space Typo Fixed!
 
             const subs = window.allSubmissions;
             totalSpan.innerText = subs.length;
@@ -1387,33 +1386,24 @@
             }
 
             try {
-                // 🚀 超強智慧轉換器：直接允許貼上 Firebase 的 Javascript 原始碼！
                 let cleanInput = configInput;
                 
-                // 1. 如果包含大括號 { ... }，自動把前後的 JS 宣告(如 const firebaseConfig =) 裁切掉
+                // Automatically convert JS SDK snippet to strict JSON formatting
                 const braceMatch = cleanInput.match(/\{[\s\S]*\}/);
                 if (braceMatch) {
                     cleanInput = braceMatch[0];
                 }
                 
-                // 2. 將單引號替換為雙引號
                 cleanInput = cleanInput.replace(/:\s*'([^']*)'/g, ':"$1"');
-                
-                // 3. 把沒有引號的鍵值(keys) 加上雙引號 (例如 apiKey: -> "apiKey":)
                 cleanInput = cleanInput.replace(/([{,]\s*)([a-zA-Z0-9_]+)\s*:/g, '$1"$2":');
-                
-                // 4. 清除結尾多餘的逗號 (Trailing commas)
                 cleanInput = cleanInput.replace(/,\s*([}\]])/g, '$1');
 
-                // 進行解析
                 const parsed = JSON.parse(cleanInput); 
                 
-                // 檢查是否含有必要欄位
                 if (!parsed.apiKey || !parsed.projectId || !parsed.appId) {
                     throw new Error("遺失必要欄位");
-                }}
+                }
 
-                // 將其格式化為標準嚴格 JSON 存入 localStorage
                 const standardJson = JSON.stringify(parsed, null, 2);
                 localStorage.setItem('custom_firebase_config', standardJson);
                 window.closeCloudConfigModal();

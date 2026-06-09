@@ -50,9 +50,6 @@
                 <button onclick="openTeacherVerifyModal()" id="btn-teacher-view" class="bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs sm:text-sm font-medium px-4 py-2 rounded-lg transition-all flex items-center gap-1 border border-slate-700">
                     🧑‍🏫 教師管理後台
                 </button>
-                <button onclick="openCloudConfigModal()" class="bg-slate-800 hover:bg-slate-700 text-amber-400 text-xs sm:text-sm font-medium px-3 py-2 rounded-lg transition-all border border-amber-500/30">
-                    ☁️ 雲端設定
-                </button>
             </div>
         </div>
     </nav>
@@ -63,7 +60,7 @@
             <span class="bg-indigo-500/40 text-indigo-200 text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider border border-indigo-400/20">高二升高三 · 自主探索與升學實力比對學習單</span>
             <h2 class="text-3xl md:text-5xl font-black mt-4 tracking-tight drop-shadow-sm">親手拆解你的「理想與現實」</h2>
             <p class="text-indigo-100 mt-3 text-sm md:text-base max-w-2xl mx-auto leading-relaxed">
-                這不是一份應付了事的心得，而是引導你的大考戰略方針！
+                這不是一份應付了事的心得，而是引導你踏出最精準的大考戰略方針！
             </p>
             
             <!-- Collapsible Explorer Toolbox -->
@@ -321,15 +318,15 @@
                     <div>
                         <label class="block text-sm font-bold text-slate-700 mb-2">Q6. 選定你的頭號奮鬥目標： <span class="text-rose-500">*</span></label>
                         <div class="flex gap-2">
-                            <input type="text" id="q6-uni" class="w-1/2 bg-slate-50 border border-slate-200 rounded-lg px-3 py-2 text-slate-800 text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-emerald-500" placeholder="目標大學 (如：國立陽明交通大學)">
+                            <input type="text" id="q6-uni" class="w-1/2 bg-slate-50 border border-slate-200 rounded-lg px-3 py-2 text-slate-800 text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-emerald-500" placeholder="目標大學 (如：陽明交大)">
                             <input type="text" id="q6-dept" class="w-1/2 bg-slate-50 border border-slate-200 rounded-lg px-3 py-2 text-slate-800 text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-emerald-500" placeholder="目標科系 (如：資訊工程學系)">
                         </div>
                     </div>
                     <div>
                         <label class="block text-sm font-bold text-slate-700 mb-2">Q7. 該科系去年申請入學最低通過篩選標準： <span class="text-rose-500">*</span></label>
                         <div class="flex gap-2">
-                            <input type="text" id="q7-subject" class="w-1/2 bg-slate-50 border border-slate-200 rounded-lg px-3 py-2 text-slate-800 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500" placeholder="篩選採計科目 (如: 英, 數A, 自)">
-                            <input type="text" id="q7-score" class="w-1/2 bg-slate-50 border border-slate-200 rounded-lg px-3 py-2 text-slate-800 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500" placeholder="去年錄取/通過級分 (如: 數A自共27級分)">
+                            <input type="text" id="q7-subject" class="w-1/2 bg-slate-50 border border-slate-200 rounded-lg px-3 py-2 text-slate-800 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500" placeholder="篩選採計科目 (如: 英,數A,自)">
+                            <input type="text" id="q7-score" class="w-1/2 bg-slate-50 border border-slate-200 rounded-lg px-3 py-2 text-slate-800 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500" placeholder="去年錄取/通過級分 (如: 共27級)">
                         </div>
                     </div>
                 </div>
@@ -597,10 +594,10 @@
                     <button onclick="clearData()" class="bg-slate-700 hover:bg-slate-600 text-slate-300 text-xs font-bold px-4 py-2.5 rounded-xl transition-all">
                         🗑️ 清除重填
                     </button>
-                    <button onclick="exportJSONBackup()" class="bg-indigo-700 hover:bg-indigo-600 text-indigo-100 text-xs font-bold px-4 py-2.5 rounded-xl transition-all">
+                    <button onclick="exportJSONBackup()" class="bg-indigo-700 hover:bg-indigo-600 text-indigo-100 text-xs font-bold px-4 py-2.5 rounded-xl transition-all flex items-center gap-1">
                         📂 導出備份 JSON 檔
                     </button>
-                    <button onclick="submitToCloud()" id="btn-cloud-submit" class="bg-amber-600 hover:bg-amber-500 text-white text-xs font-bold px-4 py-2.5 rounded-xl transition-all shadow-md">
+                    <button onclick="submitToCloud()" id="btn-cloud-submit" class="bg-amber-600 hover:bg-amber-500 text-white text-xs font-bold px-4 py-2.5 rounded-xl transition-all shadow-md flex items-center gap-1">
                         ☁️ 提交雲端資料庫
                     </button>
                     <button onclick="window.print()" class="bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold px-5 py-2.5 rounded-xl transition-all shadow-lg flex items-center gap-1">
@@ -682,7 +679,7 @@
                         <tbody id="submissions-table-body" class="divide-y divide-slate-100 text-slate-600">
                             <tr>
                                 <td colspan="8" class="px-4 py-8 text-center text-slate-400 font-medium">
-                                    📭 目前暫無任何學生呈交的數據。請點擊上方匯入學生的 JSON 檔，或進行雲端連結設定。
+                                    📭 目前暫無任何學生呈交的數據。請等待學生線上送出，或手動匯入學生的 JSON 檔。
                                 </td>
                             </tr>
                         </tbody>
@@ -722,31 +719,6 @@
         </div>
     </div>
 
-    <!-- CLOUD CONFIG MODAL -->
-    <div id="cloud-config-modal" class="fixed inset-0 bg-slate-950/60 backdrop-blur-sm flex items-center justify-center z-50 hidden no-print">
-        <div class="bg-white rounded-2xl max-w-lg w-full p-6 shadow-2xl border border-slate-100 m-4">
-            <h3 class="text-lg font-black text-slate-900 flex items-center gap-1">☁️ Firebase 雲端資料庫連結設定</h3>
-            <p class="text-xs text-slate-400 mt-1">若要讓全班學生在線上提交時自動集中至雲端，請設定您的 Firebase 憑證（將儲存於瀏覽器）。</p>
-            <div class="mt-4 space-y-3">
-                <div>
-                    <label class="block text-[10px] font-bold text-slate-500 mb-0.5">Firebase Configuration JSON (可直接貼上 Firebase 控制台複製的 SDK 程式碼)</label>
-                    <textarea id="firebase-config-input" rows="6" class="w-full bg-slate-50 border border-slate-200 rounded-lg p-2.5 text-xs text-slate-700 font-mono focus:outline-none focus:ring-1 focus:ring-amber-500" placeholder='const firebaseConfig = {&#10;  apiKey: "...",&#10;  authDomain: "...",&#10;  projectId: "...",&#10;  storageBucket: "...",&#10;  messagingSenderId: "...",&#10;  appId: "..."&#10;};'></textarea>
-                </div>
-            </div>
-            <div class="flex justify-between items-center mt-6">
-                <a href="https://console.firebase.google.com/" target="_blank" class="text-xs text-amber-600 hover:underline">👉 點我前往 Firebase 控制台 ↗</a>
-                <div class="flex gap-2">
-                    <button onclick="closeCloudConfigModal()" class="bg-slate-100 hover:bg-slate-200 text-slate-600 text-xs font-bold px-4 py-2 rounded-lg transition-all">
-                        關閉
-                    </button>
-                    <button onclick="saveCloudConfig()" class="bg-amber-600 hover:bg-amber-500 text-white text-xs font-bold px-4 py-2 rounded-lg transition-all">
-                        儲存並連接
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <!-- FOOTER -->
     <footer class="text-center py-8 text-xs text-slate-400 border-t border-slate-200 mt-auto no-print bg-slate-50">
         <p>© 台灣高中生專屬 · 準高三自主生涯數據導航與升學攻略系統</p>
@@ -759,34 +731,41 @@
         import { getAuth, signInAnonymously } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
         import { getFirestore, doc, setDoc, collection, onSnapshot } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
 
-        // Global Firebase variables
+
+        const myFirebaseConfig = {
+            apiKey: "AIzaSyDZcHEHyLqoxYcmp1djTSYuxPQD4QeXCiM",
+            authDomain: "career-survey-85285.firebaseapp.com",
+            databaseURL: "https://career-survey-85285-default-rtdb.firebaseio.com",
+            projectId: "career-survey-85285",
+            storageBucket: "career-survey-85285.firebasestorage.app",
+            messagingSenderId: "684073672321",
+            appId: "1:684073672321:web:c5a30a6563b530e2c9f780",
+            measurementId: "G-42QW8DL068"
+        };
+
         window.firebaseApp = null;
         window.firebaseDb = null;
         window.firebaseAuth = null;
         window.firebaseConnected = false;
 
-        // Initialize Firebase with Saved Config from localStorage (if exists)
-        window.initFirebase = async function(configString) {
+        // Initialize Firebase on window load
+        window.initFirebase = async function() {
             try {
-                if (!configString) {
-                    const savedConfig = localStorage.getItem('custom_firebase_config');
-                    if (savedConfig) {
-                        configString = savedConfig;
-                    } else {
-                        return; // No config available
-                    }
+                // Check if the config is filled by the teacher
+                if (!myFirebaseConfig || Object.keys(myFirebaseConfig).length === 0) {
+                    console.log("Firebase config is empty. System will run in offline mode.");
+                    return; 
                 }
 
-                const config = JSON.parse(configString);
-                window.firebaseApp = initializeApp(config);
+                window.firebaseApp = initializeApp(myFirebaseConfig);
                 window.firebaseDb = getFirestore(window.firebaseApp);
                 window.firebaseAuth = getAuth(window.firebaseApp);
 
-                // Authenticate anonymously first
+                // Authenticate anonymously
                 await signInAnonymously(window.firebaseAuth);
                 window.firebaseConnected = true;
                 
-                // Update Cloud indicator in UI
+                // Update Cloud indicator in UI to Green
                 const submitBtn = document.getElementById('btn-cloud-submit');
                 if (submitBtn) {
                     submitBtn.classList.remove('bg-amber-600', 'hover:bg-amber-500');
@@ -796,20 +775,18 @@
 
                 // If teacher is logged in, start real-time sync
                 if (window.currentView === 'teacher') {
-                    setupRealtimeSubmissions();
+                    window.setupRealtimeSubmissions();
                 }
             } catch (error) {
                 console.error("Firebase init failed:", error);
-                window.showAlert("雲端連線失敗 ❌", "請確認您填寫的 Firebase Config 格式是否正確。");
+                const submitBtn = document.getElementById('btn-cloud-submit');
+                if (submitBtn) submitBtn.innerText = "☁️ 雲端連線失敗 (請用 JSON 導出)";
             }
         };
 
-        // Student Submit to Cloud
         window.submitToCloud = async function() {
             if (!window.firebaseConnected) {
-                window.showConfirm("雲端資料庫尚未設定", "要立刻進行雲端設定連結嗎？否則您只能使用 JSON 離線導出功能。", () => {
-                    window.openCloudConfigModal();
-                });
+                window.showAlert("無法直接提交至雲端 ⚠️", "老師尚未完成系統底層的雲端參數綁定。<br><br>👉 請點選左側的 <b>「📂 導出備份 JSON 檔」</b>，將檔案下載後，上傳繳交至老師指定的作業區！");
                 return;
             }
 
@@ -858,7 +835,7 @@
             const studentData = window.getStudentFormData();
 
             try {
-                const appId = typeof __app_id !== 'undefined' ? __app_id : 'default-career-survey';
+                const appId = typeof __app_id !== 'undefined' ? __app_id : 'career-survey-108';
                 const submissionDocRef = doc(window.firebaseDb, 'artifacts', appId, 'public', 'data', 'submissions', docId);
                 
                 await setDoc(submissionDocRef, {
@@ -866,31 +843,35 @@
                     submittedAt: new Date().toISOString()
                 });
 
-                window.showAlert("提交成功 🎉", "您的生涯探索數據已安全上載至老師的雲端資料庫中！");
+                window.showAlert("提交成功 🎉", "您的生涯探索數據已安全上傳至老師的雲端資料庫中！");
             } catch (error) {
                 console.error("Submit to cloud failed:", error);
-                window.showAlert("提交失敗 ❌", "上傳雲端時發生錯誤，請聯絡老師，或使用「導出備份 JSON 檔」以手動呈交。");
+                window.showAlert("提交失敗 ❌", "上傳雲端時發生錯誤，可能是網路不穩定或資料庫寫入權限問題。<br>請改用「導出備份 JSON 檔」以手動呈交。");
             }
         };
 
-        // Teacher Realtime Listeners
         window.setupRealtimeSubmissions = function() {
             if (!window.firebaseDb) return;
-            const appId = typeof __app_id !== 'undefined' ? __app_id : 'default-career-survey';
+            const appId = typeof __app_id !== 'undefined' ? __app_id : 'career-survey-108';
             const collRef = collection(window.firebaseDb, 'artifacts', appId, 'public', 'data', 'submissions');
             
-            onSnapshot(collRef, (snapshot) => {
-                window.allSubmissions = [];
-                snapshot.forEach((doc) => {
-                    window.allSubmissions.push(doc.data());
+            try {
+                onSnapshot(collRef, (snapshot) => {
+                    window.allSubmissions = [];
+                    snapshot.forEach((doc) => {
+                        window.allSubmissions.push(doc.data());
+                    });
+                    window.renderTeacherDashboard();
+                }, (error) => {
+                    console.error("Firestore real-time error:", error);
+                    window.showAlert("資料庫連線異常", "無法讀取後台資料，請檢查 Firebase 中的「安全規則 (Rules)」是否正確設定為 allow read, write: if true;");
                 });
-                window.renderTeacherDashboard();
-            }, (error) => {
-                console.error("Firestore real-time error:", error);
-            });
+            } catch (err) {
+                console.error("Snapshot setup failed:", err);
+            }
         };
 
-        // Initialize Firebase on window load if custom config is stored
+        // Fire Initialization
         window.addEventListener('load', () => {
             window.initFirebase();
         });
@@ -898,27 +879,23 @@
 
     <!-- Core Application Logic Script -->
     <script>
-        // Global State variables
         window.currentView = 'student';
-        window.allSubmissions = []; // Array of student data submissions
+        window.allSubmissions = []; 
 
-        // List of all form field IDs for data persistence (Attached to window to avoid module scoping issues)
         window.fields = [
             'student-class', 'student-number', 'student-name', 'target-domain',
             'q1-ans', 'q2-112-avg', 'q2-112-med', 'q2-113-avg', 'q2-113-med', 'q2-114-avg', 'q2-114-med',
             'q3-industry', 'q4-salary', 'q5-job-title', 'q5-skill-1', 'q5-skill-2', 'q5-skill-3',
-            'screenshot-1', // Added Task 1 screenshot hidden field
+            'screenshot-1', 
             'q6-uni', 'q6-dept', 'q7-subject', 'q7-score',
             'my-rank-percent', 'mock-sub-1', 'mock-score-1', 'mock-sub-2', 'mock-score-2', 'mock-sub-3', 'mock-score-3',
-            'target-sum-score', 'screenshot-2', // Added Task 2 screenshot hidden field
+            'target-sum-score', 'screenshot-2', 
             'pathway-ts-reason', 'pathway-star-reason', 'pathway-apply-reason', 'pathway-dist-reason',
             'q9-ans', 'plan-subject', 'plan-study-detail', 'plan-phone', 'plan-time', 'self-score', 'q11-ans'
         ];
 
-        // Pathway radio groups
         window.radioGroups = ['pathway-ts', 'pathway-star', 'pathway-apply', 'pathway-dist'];
 
-        // Helper: Find labels for Validation Alerts
         window.findLabelForField = function(id) {
             const mapping = {
                 'student-class': '基本資料：班級',
@@ -970,14 +947,13 @@
         window.findLabelForRadio = function(groupName) {
             const mapping = {
                 'pathway-ts': '任務三：1.特殊選才適合度評估',
-                'pathway-star': '任務裝：2.繁星推薦適合度評估',
+                'pathway-star': '任務三：2.繁星推薦適合度評估',
                 'pathway-apply': '任務三：3.個人申請適合度評估',
                 'pathway-dist': '任務三：4.分發入學適合度評估'
             };
             return mapping[groupName] || groupName;
         }
 
-        // Toggle Toolbox Visibility
         function toggleToolbox() {
             const linksDiv = document.getElementById('toolbox-links');
             const toggleIcon = document.getElementById('toolbox-toggle-icon');
@@ -990,7 +966,6 @@
             }
         }
 
-        // Universal Smart Image Uploader & Compressor
         window.handleScreenshotUpload = function(event, targetInputId, targetPreviewId) {
             const file = event.target.files[0];
             if (!file) return;
@@ -1004,9 +979,8 @@
             reader.onload = function(e) {
                 const img = new Image();
                 img.onload = function() {
-                    // Create HTML5 Canvas to resize and compress the image
                     const canvas = document.createElement('canvas');
-                    const MAX_WIDTH = 500; // Optimal width for report embedding
+                    const MAX_WIDTH = 500;
                     let width = img.width;
                     let height = img.height;
 
@@ -1021,14 +995,11 @@
                     const ctx = canvas.getContext('2d');
                     ctx.drawImage(img, 0, 0, width, height);
 
-                    // Convert to optimized compressed JPEG string
-                    const compressedBase64 = canvas.toDataURL('image/jpeg', 0.6); // 60% quality is highly compressed yet clear
+                    const compressedBase64 = canvas.toDataURL('image/jpeg', 0.6); 
                     
-                    // Update state & LocalStorage
                     inputEl.value = compressedBase64;
                     localStorage.setItem(targetInputId, compressedBase64);
                     
-                    // Update UI previews
                     previewEl.src = compressedBase64;
                     previewEl.classList.remove('hidden');
                     if (placeholderEl) placeholderEl.classList.add('hidden');
@@ -1038,11 +1009,9 @@
             reader.readAsDataURL(file);
         };
 
-        // Initial Load and Auto-Save Sync
         window.onload = function() {
             let hasSavedDraft = false;
 
-            // Restore answers from LocalStorage
             window.fields.forEach(id => {
                 const element = document.getElementById(id);
                 if (element) {
@@ -1051,7 +1020,6 @@
                         element.value = savedVal;
                         hasSavedDraft = true;
 
-                        // Restore image previews if they are loaded
                         if (id.startsWith('screenshot-')) {
                             const num = id.split('-')[1];
                             const previewEl = document.getElementById(`preview-${num}`);
@@ -1063,7 +1031,6 @@
                             }
                         }
                     }
-                    // Attach change listener to save instantly
                     element.addEventListener('input', () => {
                         localStorage.setItem(id, element.value);
                         if (element.value.trim() !== '') {
@@ -1091,7 +1058,6 @@
                 });
             });
 
-            // If draft loaded, show smooth floating banner
             if (hasSavedDraft) {
                 const toast = document.createElement('div');
                 toast.className = "fixed bottom-5 left-5 bg-emerald-600 text-white text-xs font-bold px-4 py-3 rounded-xl shadow-2xl z-50 flex items-center gap-2 animate-bounce no-print";
@@ -1106,7 +1072,6 @@
             calculateGap();
         };
 
-        // Interactive Admission Gap Calculator
         function calculateGap() {
             const sc1 = parseInt(document.getElementById('mock-score-1').value) || 0;
             const sc2 = parseInt(document.getElementById('mock-score-2').value) || 0;
@@ -1138,7 +1103,6 @@
             }
         }
 
-        // Get Form Data Object
         window.getStudentFormData = function() {
             const data = {};
             window.fields.forEach(id => {
@@ -1158,9 +1122,8 @@
             return data;
         }
 
-        // Clear ONLY survey inputs, preserving database configuration
         function clearData() {
-            window.showConfirm("確定要清除所有填答資料嗎？", "這會徹底洗掉這台電腦上所有的填答內容，但會保留您的 Firebase 雲端連結設定。", () => {
+            window.showConfirm("確定要清除所有填答資料嗎？", "這會徹底洗掉這台電腦上所有的填答內容（但不會影響底層的雲端連線）。", () => {
                 window.fields.forEach(id => {
                     localStorage.removeItem(id);
                     const el = document.getElementById(id);
@@ -1172,7 +1135,6 @@
                     radios.forEach(r => r.checked = false);
                 });
                 
-                // Reset file preview elements
                 ['1','2'].forEach(num => {
                     const preview = document.getElementById(`preview-${num}`);
                     const placeholder = document.getElementById(`placeholder-${num}`);
@@ -1185,7 +1147,6 @@
             });
         }
 
-        // Local Backup Engine (JSON Download)
         function exportJSONBackup() {
             const sClass = document.getElementById('student-class').value.trim() || "未填寫";
             const sNum = document.getElementById('student-number').value.trim() || "00";
@@ -1200,7 +1161,6 @@
             downloadAnchor.remove();
         }
 
-        // Multi-JSON Import for Teachers
         function handleJSONImport(event) {
             const files = event.target.files;
             if (!files.length) return;
@@ -1219,8 +1179,9 @@
                         }
                         loadedCount++;
                         if (loadedCount === files.length) {
+                            window.allSubmissions = window.allSubmissions || [];
                             window.allSubmissions = [...window.allSubmissions, ...tempSubmissions];
-                            // Filter duplicate class-number entries
+                            
                             const uniqueSubmissions = [];
                             const keys = new Set();
                             window.allSubmissions.forEach(sub => {
@@ -1244,14 +1205,13 @@
             }
         }
 
-        // Teacher Export All Data to Excel Friendly UTF-8 CSV
         function exportTeacherDataToCSV() {
-            if (!window.allSubmissions.length) {
+            const subs = window.allSubmissions || [];
+            if (!subs.length) {
                 window.showAlert("匯出失敗", "目前沒有任何學生提交的數據可供匯出。");
                 return;
             }
 
-            // Headers configuration
             const headers = [
                 "班級", "座號", "姓名", "探索領域", "Q1看法", "112平均", "112中位", 
                 "113平均", "113中位", "114平均", "114中位", "目標分析產業", "產業中位年薪", 
@@ -1265,7 +1225,7 @@
 
             const csvRows = [headers.join(",")];
 
-            window.allSubmissions.forEach(sub => {
+            subs.forEach(sub => {
                 const row = [
                     sub['student-class'] || "",
                     sub['student-number'] || "",
@@ -1284,7 +1244,7 @@
                     sub['q5-skill-1'] || "",
                     sub['q5-skill-2'] || "",
                     sub['q5-skill-3'] || "",
-                    sub['screenshot-1'] ? "已上傳" : "未上傳", // Prevent Base64 bloat in CSV cells
+                    sub['screenshot-1'] ? "已上傳" : "未上傳", 
                     sub['q6-uni'] || "",
                     sub['q6-dept'] || "",
                     sub['q7-subject'] || "",
@@ -1297,7 +1257,7 @@
                     sub['mock-sub-3'] || "",
                     sub['mock-score-3'] || "",
                     sub['target-sum-score'] || "",
-                    sub['screenshot-2'] ? "已上傳" : "未上傳", // Prevent Base64 bloat in CSV cells
+                    sub['screenshot-2'] ? "已上傳" : "未上傳", 
                     sub['pathway-ts'] || "",
                     sub['pathway-ts-reason'] || "",
                     sub['pathway-star'] || "",
@@ -1313,12 +1273,11 @@
                     sub['plan-time'] || "",
                     sub['self-score'] || "",
                     sub['q11-ans'] || ""
-                ].map(val => `"${val.toString().replace(/"/g, '""')}"`); // Quote and escape
+                ].map(val => `"${val.toString().replace(/"/g, '""')}"`); 
 
                 csvRows.push(row.join(","));
             });
 
-            // UTF-8 BOM to prevent Excel display corruption
             const csvContent = "\uFEFF" + csvRows.join("\n");
             const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
             const url = URL.createObjectURL(blob);
@@ -1331,7 +1290,6 @@
             document.body.removeChild(link);
         }
 
-        // VIEW TOGGLING ENGINE
         function toggleView(view) {
             window.currentView = view;
             const studentHeader = document.getElementById('student-header');
@@ -1356,7 +1314,6 @@
                 btnStudent.className = "bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs sm:text-sm font-medium px-4 py-2 rounded-lg transition-all flex items-center gap-1 border border-slate-700";
                 btnTeacher.className = "bg-slate-900 hover:bg-slate-800 text-white text-xs sm:text-sm font-bold px-4 py-2 rounded-lg transition-all flex items-center gap-1 shadow-md border border-slate-700";
                 
-                // Fetch/Render stats
                 if (window.firebaseConnected && window.setupRealtimeSubmissions) {
                     window.setupRealtimeSubmissions();
                 } else {
@@ -1365,120 +1322,113 @@
             }
         }
 
-        // RENDER TEACHER DASHBOARD DETAILS
         window.renderTeacherDashboard = function() {
-            const tableBody = document.getElementById('submissions-table-body');
-            const totalSpan = document.getElementById('stat-total-submissions');
-            const gapSpan = document.getElementById('stat-avg-gap');
-            const domainSpan = document.getElementById('stat-top-domain');
-            const pathSpan = document.getElementById('stat-top-pathway');
+            try {
+                const tableBody = document.getElementById('submissions-table-body');
+                const totalSpan = document.getElementById('stat-total-submissions');
+                const gapSpan = document.getElementById('stat-avg-gap');
+                const domainSpan = document.getElementById('stat-top-domain');
+                const pathSpan = document.getElementById('stat-top-pathway');
 
-            const subs = window.allSubmissions;
-            totalSpan.innerText = subs.length;
+                // Error Boundary for empty or undefined arrays
+                const subs = window.allSubmissions || [];
+                totalSpan.innerText = subs.length;
 
-            if (subs.length === 0) {
-                tableBody.innerHTML = `
-                    <tr>
-                        <td colspan="8" class="px-4 py-8 text-center text-slate-400 font-medium">
-                            📭 目前暫無任何學生提交的數據。請點擊上方匯入學生的 JSON 檔，或進行雲端連結設定。
-                        </td>
-                    </tr>
-                `;
-                gapSpan.innerText = "0";
-                domainSpan.innerText = "無資料";
-                pathSpan.innerText = "無資料";
-                return;
-            }
-
-            // Calculation of Analytical Stats
-            let totalGap = 0;
-            const domainCounts = {};
-            const pathCounts = {};
-
-            tableBody.innerHTML = "";
-            subs.forEach((sub, idx) => {
-                // Mock gap calc
-                const m1 = parseInt(sub['mock-score-1']) || 0;
-                const m2 = parseInt(sub['mock-score-2']) || 0;
-                const m3 = parseInt(sub['mock-score-3']) || 0;
-                const totalMock = m1 + m2 + m3;
-                const targetSum = parseInt(sub['target-sum-score']) || 0;
-                const gapVal = totalMock - targetSum;
-
-                totalGap += gapVal;
-
-                // Domain count
-                const dom = sub['target-domain'] || "未分類";
-                domainCounts[dom] = (domainCounts[dom] || 0) + 1;
-
-                // Pathway count
-                const pathways = [sub['pathway-ts'], sub['pathway-star'], sub['pathway-apply'], sub['pathway-dist']];
-                pathways.forEach(p => {
-                    if (p && p !== "完全不考慮" && p !== "完全無望" && p !== "不願面對") {
-                        pathCounts[p] = (pathCounts[p] || 0) + 1;
-                    }
-                });
-
-                // Build pathway text
-                let bestPathway = "未抉擇";
-                if (sub['pathway-star'] === "極大優勢") bestPathway = "⭐ 繁星推薦";
-                else if (sub['pathway-apply'] === "主力戰場") bestPathway = "📁 個人申請";
-                else if (sub['pathway-dist'] === "全力決戰") bestPathway = "📝 分發入學";
-                else if (sub['pathway-ts'] === "非常有優勢") bestPathway = "🎖️ 特殊選才";
-
-                // Visual class for gap
-                let gapClass = "text-slate-500 font-medium";
-                if (targetSum > 0 && totalMock > 0) {
-                    if (gapVal >= 3) gapClass = "text-green-600 font-black";
-                    else if (gapVal >= 0) gapClass = "text-emerald-600 font-bold";
-                    else gapClass = "text-rose-500 font-bold";
+                if (subs.length === 0) {
+                    tableBody.innerHTML = `
+                        <tr>
+                            <td colspan="8" class="px-4 py-8 text-center text-slate-400 font-medium">
+                                📭 目前暫無任何學生呈交的數據。請等待學生線上送出，或手動匯入 JSON 檔。
+                            </td>
+                        </tr>
+                    `;
+                    gapSpan.innerText = "0";
+                    domainSpan.innerText = "無資料";
+                    pathSpan.innerText = "無資料";
+                    return;
                 }
 
-                // Screenshot indicator
-                const hasImages = (sub['screenshot-1'] || sub['screenshot-2']) ? ' 🖼️' : '';
+                let totalGap = 0;
+                const domainCounts = {};
+                const pathCounts = {};
 
-                const tr = document.createElement('tr');
-                tr.className = "hover:bg-slate-50/80 transition-colors";
-                tr.innerHTML = `
-                    <td class="px-4 py-3 font-semibold text-slate-800">${sub['student-class'] || 'X'}-${sub['student-number'] || 'X'}</td>
-                    <td class="px-4 py-3 font-bold text-slate-900">${sub['student-name'] || '未填寫'}${hasImages}</td>
-                    <td class="px-4 py-3 text-slate-500">${sub['target-domain'] || '無'}</td>
-                    <td class="px-4 py-3 text-slate-700">
-                        <span class="font-bold">${sub['q6-uni'] || ''}</span> ${sub['q6-dept'] || '無'} 
-                        <div class="text-[10px] text-slate-400 mt-0.5">去年標準：${sub['q7-score'] || '無'}</div>
-                    </td>
-                    <td class="px-4 py-3 text-slate-700">
-                        <span class="font-bold">${totalMock}級分</span>
-                        <div class="text-[10px] ${gapClass} mt-0.5">差距：${gapVal >= 0 ? '+' : ''}${gapVal} 級分</div>
-                    </td>
-                    <td class="px-4 py-3 text-slate-500 font-medium">${bestPathway}</td>
-                    <td class="px-4 py-3 text-center font-bold text-slate-800">${sub['self-score'] || '0'} / 10</td>
-                    <td class="px-4 py-3 text-center">
-                        <button onclick="inspectStudentSurvey(${idx})" class="text-blue-600 hover:text-blue-800 font-bold hover:underline">🔍 查看</button>
-                    </td>
-                `;
-                tableBody.appendChild(tr);
-            });
+                tableBody.innerHTML = "";
+                subs.forEach((sub, idx) => {
+                    const m1 = parseInt(sub['mock-score-1']) || 0;
+                    const m2 = parseInt(sub['mock-score-2']) || 0;
+                    const m3 = parseInt(sub['mock-score-3']) || 0;
+                    const totalMock = m1 + m2 + m3;
+                    const targetSum = parseInt(sub['target-sum-score']) || 0;
+                    const gapVal = totalMock - targetSum;
 
-            // Calculate and output averages/tops
-            const avgGap = (totalGap / subs.length).toFixed(1);
-            gapSpan.innerText = `${avgGap >= 0 ? '+' : ''}${avgGap}`;
+                    totalGap += gapVal;
 
-            // Top domain sorting
-            const topDomain = Object.keys(domainCounts).sort((a,b) => domainCounts[b] - domainCounts[a])[0] || "無";
-            domainSpan.innerText = topDomain;
+                    const dom = sub['target-domain'] || "未分類";
+                    domainCounts[dom] = (domainCounts[dom] || 0) + 1;
 
-            // Top pathway sorting
-            const topPath = Object.keys(pathCounts).sort((a,b) => pathCounts[b] - pathCounts[a])[0] || "無";
-            pathSpan.innerText = topPath;
+                    const pathways = [sub['pathway-ts'], sub['pathway-star'], sub['pathway-apply'], sub['pathway-dist']];
+                    pathways.forEach(p => {
+                        if (p && p !== "完全不考慮" && p !== "完全無望" && p !== "不願面對") {
+                            pathCounts[p] = (pathCounts[p] || 0) + 1;
+                        }
+                    });
+
+                    let bestPathway = "未抉擇";
+                    if (sub['pathway-star'] === "極大優勢") bestPathway = "⭐ 繁星推薦";
+                    else if (sub['pathway-apply'] === "主力戰場") bestPathway = "📁 個人申請";
+                    else if (sub['pathway-dist'] === "全力決戰") bestPathway = "📝 分發入學";
+                    else if (sub['pathway-ts'] === "非常有優勢") bestPathway = "🎖️ 特殊選才";
+
+                    let gapClass = "text-slate-500 font-medium";
+                    if (targetSum > 0 && totalMock > 0) {
+                        if (gapVal >= 3) gapClass = "text-green-600 font-black";
+                        else if (gapVal >= 0) gapClass = "text-emerald-600 font-bold";
+                        else gapClass = "text-rose-500 font-bold";
+                    }
+
+                    const hasImages = (sub['screenshot-1'] || sub['screenshot-2']) ? ' 🖼️' : '';
+
+                    const tr = document.createElement('tr');
+                    tr.className = "hover:bg-slate-50/80 transition-colors";
+                    tr.innerHTML = `
+                        <td class="px-4 py-3 font-semibold text-slate-800">${sub['student-class'] || 'X'}-${sub['student-number'] || 'X'}</td>
+                        <td class="px-4 py-3 font-bold text-slate-900">${sub['student-name'] || '未填寫'}${hasImages}</td>
+                        <td class="px-4 py-3 text-slate-500">${sub['target-domain'] || '無'}</td>
+                        <td class="px-4 py-3 text-slate-700">
+                            <span class="font-bold">${sub['q6-uni'] || ''}</span> ${sub['q6-dept'] || '無'} 
+                            <div class="text-[10px] text-slate-400 mt-0.5">去年標準：${sub['q7-score'] || '無'}</div>
+                        </td>
+                        <td class="px-4 py-3 text-slate-700">
+                            <span class="font-bold">${totalMock}級分</span>
+                            <div class="text-[10px] ${gapClass} mt-0.5">差距：${gapVal >= 0 ? '+' : ''}${gapVal} 級分</div>
+                        </td>
+                        <td class="px-4 py-3 text-slate-500 font-medium">${bestPathway}</td>
+                        <td class="px-4 py-3 text-center font-bold text-slate-800">${sub['self-score'] || '0'} / 10</td>
+                        <td class="px-4 py-3 text-center">
+                            <button onclick="inspectStudentSurvey(${idx})" class="text-blue-600 hover:text-blue-800 font-bold hover:underline">🔍 查看</button>
+                        </td>
+                    `;
+                    tableBody.appendChild(tr);
+                });
+
+                const avgGap = (totalGap / subs.length).toFixed(1);
+                gapSpan.innerText = `${avgGap >= 0 ? '+' : ''}${avgGap}`;
+
+                const topDomain = Object.keys(domainCounts).sort((a,b) => domainCounts[b] - domainCounts[a])[0] || "無";
+                domainSpan.innerText = topDomain;
+
+                const topPath = Object.keys(pathCounts).sort((a,b) => pathCounts[b] - pathCounts[a])[0] || "無";
+                pathSpan.innerText = topPath;
+            } catch (err) {
+                console.error("渲染後台發生錯誤:", err);
+                document.getElementById('submissions-table-body').innerHTML = `<tr><td colspan="8" class="text-center text-rose-500 py-4 font-bold">後台畫面渲染發生錯誤，請檢查資料庫連線或重整網頁。</td></tr>`;
+            }
         };
 
-        // POPUP INSPECT MODAL FOR TEACHER
         function inspectStudentSurvey(index) {
             const sub = window.allSubmissions[index];
             if (!sub) return;
 
-            // Image tag markup builder
             const img1Markup = sub['screenshot-1'] ? `<div class="mt-2"><span class="font-bold block text-slate-500 mb-1">任務一佐證截圖：</span><img src="${sub['screenshot-1']}" class="max-h-48 rounded border shadow-sm"></div>` : '<div class="text-rose-500 italic">⚠️ 任務一無上傳佐證截圖</div>';
             const img2Markup = sub['screenshot-2'] ? `<div class="mt-2"><span class="font-bold block text-slate-500 mb-1">任務二佐證截圖：</span><img src="${sub['screenshot-2']}" class="max-h-48 rounded border shadow-sm"></div>` : '<div class="text-rose-500 italic">⚠️ 任務二無上傳佐證截圖</div>';
 
@@ -1518,7 +1468,6 @@
             window.showAlert(`🧑‍🎓 ${sub['student-name']} 的完整生涯報告檔案`, contentHtml, "large");
         }
 
-        // MODALS & CUSTOM ALERTS
         window.showAlert = function(title, message, size = "normal") {
             const modal = document.getElementById('custom-modal');
             const mTitle = document.getElementById('modal-title');
@@ -1528,7 +1477,7 @@
             mTitle.innerText = title;
             mMsg.innerHTML = message;
 
-            const modalDiv = modal.querySelector('.max-w-md');
+            const modalDiv = modal.querySelector('.max-w-md, .max-w-2xl');
             if (size === "large") {
                 modalDiv.classList.remove('max-w-md');
                 modalDiv.classList.add('max-w-2xl');
@@ -1576,9 +1525,10 @@
             document.getElementById('custom-modal').classList.add('hidden');
         }
 
-        // Teacher password unlock verification
         function openTeacherVerifyModal() {
             document.getElementById('teacher-verify-modal').classList.remove('hidden');
+            // Auto focus password input
+            setTimeout(() => document.getElementById('teacher-password').focus(), 100);
         }
 
         function closeTeacherVerifyModal() {
@@ -1590,63 +1540,13 @@
             if (pass === "teacher888") {
                 closeTeacherVerifyModal();
                 toggleView('teacher');
+                document.getElementById('teacher-password').value = ""; // Clear input for security
             } else {
-                window.showAlert("密碼錯誤 ❌", "預設教師密碼為 teacher888，請重新輸入。");
+                // FIXED: Changed alert text to prevent password leak
+                window.showAlert("密碼錯誤 ❌", "您輸入的管理密碼不正確，請重新確認。");
+                document.getElementById('teacher-password').value = "";
             }
         }
-
-        // Firebase Cloud config control
-        window.openCloudConfigModal = function() {
-            const modal = document.getElementById('cloud-config-modal');
-            const savedConfig = localStorage.getItem('custom_firebase_config');
-            if (savedConfig) {
-                document.getElementById('firebase-config-input').value = savedConfig;
-            }
-            modal.classList.remove('hidden');
-        };
-
-        window.closeCloudConfigModal = function() {
-            document.getElementById('cloud-config-modal').classList.add('hidden');
-        };
-
-        window.saveCloudConfig = function() {
-            let configInput = document.getElementById('firebase-config-input').value.trim();
-            if (!configInput) {
-                localStorage.removeItem('custom_firebase_config');
-                window.showAlert("已清除雲端設定 🧹", "重新整理頁面後，雲端連接將重設。");
-                window.closeCloudConfigModal();
-                return;
-            }
-
-            try {
-                let cleanInput = configInput;
-                
-                // Automatically convert JS SDK snippet to strict JSON formatting
-                const braceMatch = cleanInput.match(/\{[\s\S]*\}/);
-                if (braceMatch) {
-                    cleanInput = braceMatch[0];
-                }
-                
-                cleanInput = cleanInput.replace(/:\s*'([^']*)'/g, ':"$1"');
-                cleanInput = cleanInput.replace(/([{,]\s*)([a-zA-Z0-9_]+)\s*:/g, '$1"$2":');
-                cleanInput = cleanInput.replace(/,\s*([}\]])/g, '$1');
-
-                const parsed = JSON.parse(cleanInput); 
-                
-                if (!parsed.apiKey || !parsed.projectId || !parsed.appId) {
-                    throw new Error("遺失必要欄位");
-                }
-
-                const standardJson = JSON.stringify(parsed, null, 2);
-                localStorage.setItem('custom_firebase_config', standardJson);
-                window.closeCloudConfigModal();
-                window.showAlert("設定已儲存 🎉", "正在為您連線...");
-                window.initFirebase(standardJson);
-            } catch (err) {
-                console.error("Config parse error:", err);
-                window.showAlert("格式解析錯誤 ❌", "請確認貼入的字串是 Firebase 提供給您的 SDK Config 配置。<br><br><b>💡 貼心提示：</b>您可以直接複製 Firebase 網頁上的完整 <code>const firebaseConfig = { ... };</code> 代碼，我們已為您升級網頁，系統會自動轉換！");
-            }
-        };
     </script>
 </body>
 </html>

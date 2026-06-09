@@ -106,8 +106,8 @@
             </div>
 
             <div class="mt-6 flex flex-wrap justify-center gap-4 text-xs text-indigo-200">
-                <span class="bg-slate-900/30 px-3 py-1.5 rounded-lg border border-white/5">🔒 瀏覽器本機自動暫存</span>
-                <span class="bg-slate-900/30 px-3 py-1.5 rounded-lg border border-white/5">📂 支援 JSON 備份檔案導出</span>
+                <span class="bg-slate-900/30 px-3 py-1.5 rounded-lg border border-white/5">🔒 瀏覽器本機自動暫存防斷線</span>
+                <span class="bg-slate-900/30 px-3 py-1.5 rounded-lg border border-white/5">☁️ 支援雲端資料庫一鍵上傳</span>
                 <span class="bg-slate-900/30 px-3 py-1.5 rounded-lg border border-white/5">📄 一鍵轉存 PDF 學習歷程</span>
             </div>
         </div>
@@ -116,7 +116,9 @@
     <!-- Main Content Grid -->
     <main class="flex-grow max-w-5xl w-full mx-auto px-4 py-8">
 
-        <!-- STUDENT INTERFACE -->
+        <!-- ========================================== -->
+        <!-- STUDENT INTERFACE (獨立區塊，切勿刪除標籤) -->
+        <!-- ========================================== -->
         <div id="student-view-container" class="space-y-8">
             
             <!-- Student Profile Card -->
@@ -166,7 +168,7 @@
                     <label class="block text-sm font-bold text-slate-700 mb-2">
                         Q1. 什麼是「平均數」？什麼是「中位數」？為什麼在評估薪水時，看「中位數」通常比「平均數」更能反映台灣「一般上班族」的真實生活水平？ <span class="text-rose-500">*</span>
                     </label>
-                    <p class="text-xs text-slate-400 mb-2">提示：極端高薪的人（例如高階主管、頂尖晶圓大廠工程師）會對平均數造成拉高效果，這在統計學上被稱為什麼偏差？</p>
+                    <p class="text-xs text-slate-400 mb-2">提示：極端高薪的人（例如高階主管、頂尖工程師）會對平均數造成拉高效果，這在統計學上被稱為什麼偏差？</p>
                     <textarea id="q1-ans" rows="3" class="w-full bg-slate-50 border border-slate-200 rounded-lg p-3 text-slate-800 focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm leading-relaxed" placeholder="請上網搜尋並用你自己的話簡述：為什麼中位數在低薪、中產階級的薪資評估中更具備說服力..."></textarea>
                 </div>
 
@@ -183,11 +185,11 @@
                             <div class="space-y-2 text-xs">
                                 <div class="flex justify-between items-center">
                                     <span>平均年薪:</span>
-                                    <div><input type="number" id="q2-112-avg" class="w-20 border-b border-slate-300 focus:border-blue-500 text-center outline-none font-semibold"> 萬元</div>
+                                    <div><input type="number" id="q2-112-avg" class="w-20 border-b border-slate-300 focus:border-blue-500 text-center outline-none font-semibold"> 萬元 <span class="text-rose-500">*</span></div>
                                 </div>
                                 <div class="flex justify-between items-center">
                                     <span>中位數年薪:</span>
-                                    <div><input type="number" id="q2-112-med" class="w-20 border-b border-slate-300 focus:border-blue-500 text-center outline-none font-semibold"> 萬元</div>
+                                    <div><input type="number" id="q2-112-med" class="w-20 border-b border-slate-300 focus:border-blue-500 text-center outline-none font-semibold"> 萬元 <span class="text-rose-500">*</span></div>
                                 </div>
                             </div>
                         </div>
@@ -196,11 +198,11 @@
                             <div class="space-y-2 text-xs">
                                 <div class="flex justify-between items-center">
                                     <span>平均年薪:</span>
-                                    <div><input type="number" id="q2-113-avg" class="w-20 border-b border-slate-300 focus:border-blue-500 text-center outline-none font-semibold"> 萬元</div>
+                                    <div><input type="number" id="q2-113-avg" class="w-20 border-b border-slate-300 focus:border-blue-500 text-center outline-none font-semibold"> 萬元 <span class="text-rose-500">*</span></div>
                                 </div>
                                 <div class="flex justify-between items-center">
                                     <span>中位數年薪:</span>
-                                    <div><input type="number" id="q2-113-med" class="w-20 border-b border-slate-300 focus:border-blue-500 text-center outline-none font-semibold"> 萬元</div>
+                                    <div><input type="number" id="q2-113-med" class="w-20 border-b border-slate-300 focus:border-blue-500 text-center outline-none font-semibold"> 萬元 <span class="text-rose-500">*</span></div>
                                 </div>
                             </div>
                         </div>
@@ -209,11 +211,11 @@
                             <div class="space-y-2 text-xs">
                                 <div class="flex justify-between items-center">
                                     <span>平均年薪:</span>
-                                    <div><input type="number" id="q2-114-avg" class="w-20 border-b border-slate-300 focus:border-blue-500 text-center outline-none font-semibold"> 萬元</div>
+                                    <div><input type="number" id="q2-114-avg" class="w-20 border-b border-slate-300 focus:border-blue-500 text-center outline-none font-semibold"> 萬元 <span class="text-rose-500">*</span></div>
                                 </div>
                                 <div class="flex justify-between items-center">
                                     <span>中位數年薪:</span>
-                                    <div><input type="number" id="q2-114-med" class="w-20 border-b border-slate-300 focus:border-blue-500 text-center outline-none font-semibold"> 萬元</div>
+                                    <div><input type="number" id="q2-114-med" class="w-20 border-b border-slate-300 focus:border-blue-500 text-center outline-none font-semibold"> 萬元 <span class="text-rose-500">*</span></div>
                                 </div>
                             </div>
                         </div>
@@ -225,20 +227,20 @@
                     <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 mb-2">
                         <span class="bg-amber-100 text-amber-800 text-xs font-bold px-3 py-1 rounded-full border border-amber-200">🔍 個人興趣產業深水區調查（避免大同小異）</span>
                         <a href="https://yoursalary.taiwanjobs.gov.tw/" target="_blank" class="no-print text-xs text-blue-600 hover:underline flex items-center gap-1">
-                            💡 開啟：勞動部大專生就業導航 (內有細分產業提繳) ↗
+                            💡 開啟：勞動部大專生就業導航 (內有細分產業) ↗
                         </a>
                     </div>
                     <p class="text-xs text-slate-400 mb-4">
-                        請根據你基本資料寫下的「感興趣領域」進行研究。你可以利用勞動部就業導航、104薪資大數據或是各求職平台的實際徵才資訊進行深度分析。
+                        請根據你基本資料寫下的「感興趣領域」進行研究。你可以利用勞動部就業導航或求職平台的實際徵才資訊進行分析。
                     </p>
                     
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
                         <div>
                             <label class="block text-xs font-bold text-slate-700 mb-1">Q3. 我想要深度分析的「特定產業」： <span class="text-rose-500">*</span></label>
-                            <input type="text" id="q3-industry" class="w-full bg-slate-50 border border-slate-200 rounded-lg px-3 py-2 text-slate-800 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="例如：半導體製造業、金融證券保險業、社福與心理諮商...">
+                            <input type="text" id="q3-industry" class="w-full bg-slate-50 border border-slate-200 rounded-lg px-3 py-2 text-slate-800 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="例如：半導體製造業、金融證券保險業、社福...">
                         </div>
                         <div>
-                            <label class="block text-xs font-bold text-slate-700 mb-1">Q4. 這個產業在台灣的「中位數年薪」大概落在多少？ <span class="text-rose-500">*</span></label>
+                            <label class="block text-xs font-bold text-slate-700 mb-1">Q4. 這個產業在台灣的「中位數年薪」約落在多少？ <span class="text-rose-500">*</span></label>
                             <div class="flex gap-2 items-center">
                                 <input type="number" id="q4-salary" class="w-full bg-slate-50 border border-slate-200 rounded-lg px-3 py-2 text-slate-800 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 text-center font-bold" placeholder="輸入數字">
                                 <span class="text-sm font-semibold">萬元/年</span>
@@ -247,46 +249,48 @@
                     </div>
 
                     <!-- Q5 -->
-                <div class="mb-4">
-                    <div class="flex justify-between items-center mb-2">
-                        <label class="block text-sm font-bold text-slate-700">Q5. 在該產業中，你未來最嚮往的「具體職缺」與其硬核技能調查：</label>
-                        <span class="no-print"><a href="https://www.104.com.tw/jobs/main/" target="_blank" class="text-xs text-blue-500 hover:underline">🔗 104 職缺查詢 ↗</a></span>
-                    </div>
-                    <div class="bg-slate-50 p-4 rounded-xl border border-slate-100 space-y-3">
-                        <div class="flex flex-col sm:flex-row items-start sm:items-center gap-2">
-                            <span class="text-xs font-bold text-slate-500 shrink-0">嚮往職缺名稱： <span class="text-rose-500">*</span></span>
-                            <input type="text" id="q5-job-title" class="w-full sm:w-64 bg-white border border-slate-200 rounded-lg px-3 py-1.5 text-xs font-semibold focus:outline-none focus:ring-1 focus:ring-blue-500" placeholder="例如：IC設計工程師、理財規劃分析師、臨床護理師">
+                    <div class="mb-4">
+                        <div class="flex justify-between items-center mb-2">
+                            <label class="block text-sm font-bold text-slate-700">Q5. 在該產業中，你未來最嚮往的「具體職缺」與其技能調查：</label>
+                            <span class="no-print"><a href="https://www.104.com.tw/" target="_blank" class="text-xs text-blue-500 hover:underline">🔗 104 職缺查詢 ↗</a></span>
                         </div>
-                        <p class="text-xs text-slate-400">請從求職網站的該職務說明中，整理出工作要求的 **三大關鍵能力、限制科系或必備證照**：</p>
-                        <div class="space-y-2">
-                            <div class="flex items-center gap-2">
-                                <span class="text-xs font-bold text-slate-400">1 <span class="text-rose-500">*</span></span>
-                                <input type="text" id="q5-skill-1" class="w-full bg-white border border-slate-200 rounded-lg px-3 py-1.5 text-xs focus:outline-none focus:ring-1 focus:ring-blue-500" placeholder="專業學科背景（如：資工、電機相關）/ 特定程式語言 or 設計能力">
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-100 space-y-3">
+                            <div class="flex flex-col sm:flex-row items-start sm:items-center gap-2">
+                                <span class="text-xs font-bold text-slate-500 shrink-0">嚮往職缺名稱： <span class="text-rose-500">*</span></span>
+                                <input type="text" id="q5-job-title" class="w-full sm:w-64 bg-white border border-slate-200 rounded-lg px-3 py-1.5 text-xs font-semibold focus:outline-none focus:ring-1 focus:ring-blue-500" placeholder="例如：IC設計工程師、理財分析師、臨床護理師">
                             </div>
-                            <div class="flex items-center gap-2">
-                                <span class="text-xs font-bold text-slate-400">2 <span class="text-rose-500">*</span></span>
-                                <input type="text" id="q5-skill-2" class="w-full bg-white border border-slate-200 rounded-lg px-3 py-1.5 text-xs focus:outline-none focus:ring-1 focus:ring-blue-500" placeholder="證照、英語多益門檻需求或執業執照一">
-                            </div>
-                            <div class="flex items-center gap-2">
-                                <span class="text-xs font-bold text-slate-400">3 <span class="text-rose-500">*</span></span>
-                                <input type="text" id="q5-skill-3" class="w-full bg-white border border-slate-200 rounded-lg px-3 py-1.5 text-xs focus:outline-none focus:ring-1 focus:ring-blue-500" placeholder="軟實力 / 溝通協調 / 必備軟體操作工具">
+                            <p class="text-xs text-slate-400">請從求職網站的該職務說明中，整理出工作要求的 **三大關鍵能力或必備證照**：</p>
+                            <div class="space-y-2">
+                                <div class="flex items-center gap-2">
+                                    <span class="text-xs font-bold text-slate-400">1 <span class="text-rose-500">*</span></span>
+                                    <input type="text" id="q5-skill-1" class="w-full bg-white border border-slate-200 rounded-lg px-3 py-1.5 text-xs focus:outline-none focus:ring-1 focus:ring-blue-500" placeholder="專業學科背景（如：資工相關）或 特定設計能力">
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <span class="text-xs font-bold text-slate-400">2 <span class="text-rose-500">*</span></span>
+                                    <input type="text" id="q5-skill-2" class="w-full bg-white border border-slate-200 rounded-lg px-3 py-1.5 text-xs focus:outline-none focus:ring-1 focus:ring-blue-500" placeholder="證照、英語多益門檻需求或執業執照等">
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <span class="text-xs font-bold text-slate-400">3 <span class="text-rose-500">*</span></span>
+                                    <input type="text" id="q5-skill-3" class="w-full bg-white border border-slate-200 rounded-lg px-3 py-1.5 text-xs focus:outline-none focus:ring-1 focus:ring-blue-500" placeholder="軟實力 / 溝通協調 / 必備軟體操作工具">
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="border-t border-dashed border-slate-200 pt-6 mt-6">
-                    <label class="block text-sm font-bold text-slate-700 mb-1">📸 任務一佐證：請上傳「主計處薪情平臺」或「勞動部大專生導航」的查詢畫面截圖 <span class="text-rose-500">*</span></label>
-                    <p class="text-xs text-slate-400 mb-3">提示：手機截圖直接上傳即可。系統會自動進行輕量化無損壓縮以確保雲端備份效率。</p>
-                    <div class="bg-slate-50 p-4 rounded-xl border border-dashed border-slate-300 flex flex-col md:flex-row items-center gap-6">
-                        <div class="w-full md:w-1/2">
-                            <input type="file" accept="image/*" onchange="handleScreenshotUpload(event, 'screenshot-1', 'preview-1')" class="block w-full text-xs text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-xl file:border-0 file:text-xs file:font-bold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100 cursor-pointer">
-                            <input type="hidden" id="screenshot-1">
-                        </div>
-                        <div class="w-full md:w-1/2 flex justify-center">
-                            <div class="relative max-w-full">
-                                <img id="preview-1" class="max-h-40 rounded-lg shadow-md border border-slate-200 hidden" alt="任務一截圖預覽">
-                                <span id="placeholder-1" class="text-xs text-slate-400 font-medium italic block py-4">📷 尚未上傳截圖</span>
+                    <!-- Screenshot Upload 1 -->
+                    <div class="border-t border-dashed border-slate-200 pt-6 mt-6">
+                        <label class="block text-sm font-bold text-slate-700 mb-1">📸 任務一佐證：請上傳「主計處」或「勞動部」的查詢畫面截圖 <span class="text-rose-500">*</span></label>
+                        <p class="text-xs text-slate-400 mb-3">提示：手機截圖直接上傳即可。系統會自動進行輕量化壓縮以確保上傳效率。</p>
+                        <div class="bg-slate-50 p-4 rounded-xl border border-dashed border-slate-300 flex flex-col md:flex-row items-center gap-6">
+                            <div class="w-full md:w-1/2">
+                                <input type="file" accept="image/*" onchange="window.handleScreenshotUpload(event, 'screenshot-1', 'preview-1')" class="block w-full text-xs text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-xl file:border-0 file:text-xs file:font-bold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100 cursor-pointer">
+                                <input type="hidden" id="screenshot-1">
+                            </div>
+                            <div class="w-full md:w-1/2 flex justify-center">
+                                <div class="relative max-w-full">
+                                    <img id="preview-1" class="max-h-40 rounded-lg shadow-md border border-slate-200 hidden" alt="任務一截圖預覽">
+                                    <span id="placeholder-1" class="text-xs text-slate-400 font-medium italic block py-4">📷 尚未上傳截圖</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -306,9 +310,6 @@
                         </a>
                         <a href="https://www.unews.com.tw/" target="_blank" class="inline-flex items-center gap-1.5 bg-green-50 text-green-700 hover:bg-green-100 text-xs font-bold px-3 py-2 rounded-lg transition-all border border-green-200">
                             🔍 大學問全功能查詢 ↗
-                        </a>
-                        <a href="https://ioh.tw/" target="_blank" class="inline-flex items-center gap-1.5 bg-violet-50 text-violet-700 hover:bg-violet-100 text-xs font-bold px-3 py-2 rounded-lg transition-all border border-violet-200">
-                            🎬 IOH 學長姐影片 ↗
                         </a>
                     </div>
                 </div>
@@ -340,33 +341,33 @@
                             <span class="text-xs font-bold text-slate-500 block mb-2">📊 【指標一：繁星保送關鍵——在校學業總成績】</span>
                             <div class="flex items-center gap-2">
                                 <span class="text-sm">我目前的在校「校排百分比」為： <span class="text-rose-500">*</span></span>
-                                <input type="number" id="my-rank-percent" oninput="calculateGap()" class="w-16 bg-white border border-slate-200 rounded-lg px-2 py-1.5 text-center text-sm font-bold focus:outline-none focus:ring-1 focus:ring-emerald-500"> %
+                                <input type="number" id="my-rank-percent" class="w-16 bg-white border border-slate-200 rounded-lg px-2 py-1.5 text-center text-sm font-bold focus:outline-none focus:ring-1 focus:ring-emerald-500"> %
                             </div>
                         </div>
 
                         <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
                             <span class="text-xs font-bold text-slate-500 block mb-2">📝 【指標二：申請/分科關鍵——最新模擬考成績】</span>
                             <div class="space-y-2 text-sm">
-                                <p class="text-[10px] text-slate-400">請填入目標校系採計的學測考科（至多三科）：</p>
+                                <p class="text-[10px] text-slate-400">請填入目標校系採計的學測考科（至多三科，沒有考的留白）：</p>
                                 <div class="grid grid-cols-3 gap-2">
                                     <div>
                                         <input type="text" id="mock-sub-1" class="w-full border rounded-lg px-1.5 py-1 text-xs text-center focus:ring-1 focus:ring-emerald-500" placeholder="科目1(如:英)">
-                                        <input type="number" id="mock-score-1" oninput="calculateGap()" class="w-full border rounded-lg mt-1 px-1.5 py-1 text-xs text-center font-bold" placeholder="級分">
+                                        <input type="number" id="mock-score-1" oninput="window.calculateGap()" class="w-full border rounded-lg mt-1 px-1.5 py-1 text-xs text-center font-bold" placeholder="級分">
                                     </div>
                                     <div>
                                         <input type="text" id="mock-sub-2" class="w-full border rounded-lg px-1.5 py-1 text-xs text-center focus:ring-1 focus:ring-emerald-500" placeholder="科目2(如:數A)">
-                                        <input type="number" id="mock-score-2" oninput="calculateGap()" class="w-full border rounded-lg mt-1 px-1.5 py-1 text-xs text-center font-bold" placeholder="級分">
+                                        <input type="number" id="mock-score-2" oninput="window.calculateGap()" class="w-full border rounded-lg mt-1 px-1.5 py-1 text-xs text-center font-bold" placeholder="級分">
                                     </div>
                                     <div>
                                         <input type="text" id="mock-sub-3" class="w-full border rounded-lg px-1.5 py-1 text-xs text-center focus:ring-1 focus:ring-emerald-500" placeholder="科目3(如:自)">
-                                        <input type="number" id="mock-score-3" oninput="calculateGap()" class="w-full border rounded-lg mt-1 px-1.5 py-1 text-xs text-center font-bold" placeholder="級分">
+                                        <input type="number" id="mock-score-3" oninput="window.calculateGap()" class="w-full border rounded-lg mt-1 px-1.5 py-1 text-xs text-center font-bold" placeholder="級分">
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Score Calculator Widget (Interactive) -->
+                    <!-- Score Calculator Widget -->
                     <div class="mt-5 bg-emerald-50 rounded-xl p-5 border border-emerald-100">
                         <h4 class="text-xs font-extrabold text-emerald-800 uppercase tracking-wider mb-2 flex items-center gap-1">⚡ 戰略差距自動診斷分析</h4>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
@@ -377,7 +378,7 @@
                             <div class="bg-white/60 p-3 rounded-lg">
                                 <span class="text-slate-500 text-xs block">目標校系去年通過門檻總分： <span class="text-rose-500">*</span></span>
                                 <div class="flex gap-1 items-center mt-1">
-                                    <input type="number" id="target-sum-score" oninput="calculateGap()" class="w-20 border border-emerald-300 rounded-lg px-2 py-1 text-center text-sm font-bold bg-white" placeholder="級分"> <span class="text-xs text-slate-500 font-bold">級分</span>
+                                    <input type="number" id="target-sum-score" oninput="window.calculateGap()" class="w-20 border border-emerald-300 rounded-lg px-2 py-1 text-center text-sm font-bold bg-white" placeholder="級分"> <span class="text-xs text-slate-500 font-bold">級分</span>
                                 </div>
                             </div>
                         </div>
@@ -390,12 +391,13 @@
                     </div>
                 </div>
 
+                <!-- Screenshot Upload 2 -->
                 <div class="border-t border-dashed border-slate-200 pt-6 mt-6">
-                    <label class="block text-sm font-bold text-slate-700 mb-1">📸 任務二佐證：請上傳「ColleGo!」或「大學問」目標校系的考科篩選/錄取門檻截圖 <span class="text-rose-500">*</span></label>
+                    <label class="block text-sm font-bold text-slate-700 mb-1">📸 任務二佐證：請上傳「ColleGo!」或「大學問」目標校系的考科門檻截圖 <span class="text-rose-500">*</span></label>
                     <p class="text-xs text-slate-400 mb-3">提示：手機截圖直接上傳即可。佐證截圖會同步編入最終匯出的 PDF 報告中。</p>
                     <div class="bg-slate-50 p-4 rounded-xl border border-dashed border-slate-300 flex flex-col md:flex-row items-center gap-6">
                         <div class="w-full md:w-1/2">
-                            <input type="file" accept="image/*" onchange="handleScreenshotUpload(event, 'screenshot-2', 'preview-2')" class="block w-full text-xs text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-xl file:border-0 file:text-xs file:font-bold file:bg-emerald-50 file:text-emerald-700 hover:file:bg-emerald-100 cursor-pointer">
+                            <input type="file" accept="image/*" onchange="window.handleScreenshotUpload(event, 'screenshot-2', 'preview-2')" class="block w-full text-xs text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-xl file:border-0 file:text-xs file:font-bold file:bg-emerald-50 file:text-emerald-700 hover:file:bg-emerald-100 cursor-pointer">
                             <input type="hidden" id="screenshot-2">
                         </div>
                         <div class="w-full md:w-1/2 flex justify-center">
@@ -413,7 +415,7 @@
                 <div class="flex flex-col md:flex-row justify-between items-start md:items-center border-b pb-4 mb-6 gap-4">
                     <div>
                         <span class="text-xs font-bold text-violet-600 tracking-wider">TASK 03</span>
-                        <h3 class="text-xl font-bold text-slate-900 mt-1">多元升學管道的抉擇與「高三黃金期」戰術規劃</h3>
+                        <h3 class="text-xl font-bold text-slate-900 mt-1">多元升學管道抉擇與「高三黃金期」戰術規劃</h3>
                     </div>
                     <div class="no-print">
                         <a href="https://www.108epo.com/" target="_blank" class="inline-flex items-center gap-1.5 bg-violet-50 text-violet-700 hover:bg-violet-100 text-xs font-bold px-3 py-2 rounded-lg transition-all border border-violet-200">
@@ -426,7 +428,7 @@
                 <div class="mb-6">
                     <h4 class="text-sm font-bold text-slate-700 mb-3">【第一部分：四大升學管道自我評估】</h4>
                     <p class="text-xs text-slate-400 mb-4">
-                        了解遊戲規則，才能贏得比賽。請結合你在任務二獲得的數據（校排 %、模擬考落差），評估你在各個入學管道的勝率，並做出選擇：
+                        請結合你在任務二獲得的數據（校排 %、模擬考落差），評估你在各個入學管道的勝率，並做出選擇：
                     </p>
 
                     <div class="space-y-4">
@@ -434,7 +436,7 @@
                         <div class="border border-slate-100 rounded-xl p-4 bg-slate-50/50 hover:bg-slate-50 transition-all">
                             <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-2">
                                 <span class="text-sm font-bold text-slate-800">1. 特殊選才（高三10~12月） <span class="text-rose-500">*</span></span>
-                                <span class="text-xs text-slate-400 font-medium">不看學測成績，極度看重「特殊才能、學術競賽」或「特殊身分經歷」</span>
+                                <span class="text-xs text-slate-400 font-medium">看重「特殊才能、學術競賽」或「特殊經歷」</span>
                             </div>
                             <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
                                 <div class="md:col-span-1 flex flex-col justify-center space-y-1">
@@ -455,7 +457,7 @@
                         <div class="border border-slate-100 rounded-xl p-4 bg-slate-50/50 hover:bg-slate-50 transition-all">
                             <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-2">
                                 <span class="text-sm font-bold text-slate-800">2. 繁星推薦（高三3月） <span class="text-rose-500">*</span></span>
-                                <span class="text-xs text-slate-400 font-medium">100% 依據「在校成績校排百分比」為主篩，學測分數僅為檢定/輔篩</span>
+                                <span class="text-xs text-slate-400 font-medium">100% 依據「在校成績校排百分比」為主篩</span>
                             </div>
                             <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
                                 <div class="md:col-span-1 flex flex-col justify-center space-y-1">
@@ -479,15 +481,15 @@
                         <div class="border border-slate-100 rounded-xl p-4 bg-slate-50/50 hover:bg-slate-50 transition-all">
                             <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-2">
                                 <span class="text-sm font-bold text-slate-800">3. 個人申請（高三3~5月） <span class="text-rose-500">*</span></span>
-                                <span class="text-xs text-slate-400 font-medium">最主流管道！第一階段篩學測級分，第二階段綜合看「學習歷程檔案」與面試複試</span>
+                                <span class="text-xs text-slate-400 font-medium">第一階篩學測，第二階看「學習歷程檔案」</span>
                             </div>
                             <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
                                 <div class="md:col-span-1 flex flex-col justify-center space-y-1">
                                     <label class="flex items-center gap-2 text-xs text-slate-600 cursor-pointer">
-                                        <input type="radio" name="pathway-apply" value="主力戰場" class="form-radio text-violet-600"> 我的主力戰場（分數與檔案均有一定水準）
+                                        <input type="radio" name="pathway-apply" value="主力戰場" class="form-radio text-violet-600"> 我的主力戰場（分數與檔案均有水準）
                                     </label>
                                     <label class="flex items-center gap-2 text-xs text-slate-600 cursor-pointer">
-                                        <input type="radio" name="pathway-apply" value="姑且一試" class="form-radio text-violet-600"> 做為中上嘗試，若沒上再全力拼分科
+                                        <input type="radio" name="pathway-apply" value="姑且一試" class="form-radio text-violet-600"> 做為嘗試，若沒上再全力拼分科
                                     </label>
                                 </div>
                                 <div class="md:col-span-2">
@@ -500,15 +502,15 @@
                         <div class="border border-slate-100 rounded-xl p-4 bg-slate-50/50 hover:bg-slate-50 transition-all">
                             <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-2">
                                 <span class="text-sm font-bold text-slate-800">4. 分發入學（高三7~8月） <span class="text-rose-500">*</span></span>
-                                <span class="text-xs text-slate-400 font-medium">真槍實彈筆試對決！看分科測驗分數（部分校系會回推採計或檢定學測成績）</span>
+                                <span class="text-xs text-slate-400 font-medium">真槍實彈筆試對決！看分科測驗分數</span>
                             </div>
                             <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
                                 <div class="md:col-span-1 flex flex-col justify-center space-y-1">
                                     <label class="flex items-center gap-2 text-xs text-slate-600 cursor-pointer">
-                                        <input type="radio" name="pathway-dist" value="全力決戰" class="form-radio text-violet-600"> 這是我的主力戰線（我擅長大範圍筆試，抗壓強）
+                                        <input type="radio" name="pathway-dist" value="全力決戰" class="form-radio text-violet-600"> 我的主力戰線（我擅長大範圍筆試）
                                     </label>
                                     <label class="flex items-center gap-2 text-xs text-slate-600 cursor-pointer">
-                                        <input type="radio" name="pathway-dist" value="不願面對" class="form-radio text-violet-600"> 絕不想走到這步（要在學測個申安全下莊）
+                                        <input type="radio" name="pathway-dist" value="不願面對" class="form-radio text-violet-600"> 絕不想走到這步（要在學測安全下莊）
                                     </label>
                                 </div>
                                 <div class="md:col-span-2">
@@ -529,7 +531,7 @@
                             <label class="block font-bold text-slate-700 mb-2">
                                 Q9. 學習歷程檔案體檢（針對「個人申請」深度體檢）： <span class="text-rose-500">*</span>
                             </label>
-                            <p class="text-xs text-slate-400 mb-2">如果你要在明年的個人申請中進入這間目標校系，你高一高二累積的「課程學習成果」或「多元表現」中，哪一件作品或經歷最有說服力、與該科系關聯度最高？（如果完全沒有，你高三上學期打算用哪一門課的作品來亡羊補牢？）</p>
+                            <p class="text-xs text-slate-400 mb-2">如果你要在明年的個人申請中進入目標校系，你累積的經歷中哪一件作品最有說服力？（如果沒有，你高三上學期打算用哪一門課的作品來亡羊補牢？）</p>
                             <textarea id="q9-ans" rows="3" class="w-full bg-slate-50 border border-slate-200 rounded-lg p-3 text-slate-800 focus:outline-none focus:ring-2 focus:ring-violet-500 text-sm leading-relaxed" placeholder="說明您現有的優勢檔案作品，或是高三上學期具體要完成的補齊計劃..."></textarea>
                         </div>
 
@@ -538,7 +540,7 @@
                             <label class="block font-bold text-slate-700 mb-2">
                                 Q10. 高三黃金戰略衝刺方針：
                             </label>
-                            <p class="text-xs text-slate-400 mb-2">請為即將到來的暑假與高三學測前，制定兩項「具體、可量化」的黃金方針：</p>
+                            <p class="text-xs text-slate-400 mb-2">請為即將到來的衝刺期，制定兩項「具體、可量化」的黃金方針：</p>
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                                 <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
                                     <span class="text-xs font-bold text-slate-500 block mb-2">📘 1. 學業強勢科目 / 補弱計劃</span>
@@ -548,19 +550,21 @@
                                             <input type="text" id="plan-subject" class="w-20 border border-slate-200 rounded-lg px-2 py-1 text-center font-bold" placeholder="如：英文"> <span class="text-rose-500">*</span>
                                             <span>科目上：</span>
                                         </div>
-                                        <input type="text" id="plan-study-detail" class="w-full border border-slate-200 rounded-lg px-2 py-1.5" placeholder="例如：每週一、四晚間固定完成一回學測模擬題並檢討"> <span class="text-rose-500">*</span>
+                                        <div class="flex items-center gap-1">
+                                            <input type="text" id="plan-study-detail" class="w-full border border-slate-200 rounded-lg px-2 py-1.5" placeholder="例如：每週固定完成一回模考並檢討"> <span class="text-rose-500">*</span>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
                                     <span class="text-xs font-bold text-slate-500 block mb-2">⏰ 2. 自律與時間管理</span>
                                     <div class="space-y-2 text-xs">
                                         <div class="flex items-center gap-1 flex-wrap">
-                                            <span>我決定每天使用手機/社群/手遊的時間限制在</span>
-                                            <input type="text" id="plan-phone" class="w-20 border border-slate-200 rounded-lg px-2 py-1 text-center font-bold" placeholder="例如：30分鐘"> <span class="text-rose-500">*</span>
+                                            <span>我決定每天使用手機/手遊的時間限制在</span>
+                                            <input type="text" id="plan-phone" class="w-20 border border-slate-200 rounded-lg px-2 py-1 text-center font-bold" placeholder="如：30分鐘"> <span class="text-rose-500">*</span>
                                         </div>
                                         <div class="flex items-center gap-1 flex-wrap">
                                             <span>並且每天晚上回到家</span>
-                                            <input type="text" id="plan-time" class="w-20 border border-slate-200 rounded-lg px-2 py-1 text-center font-bold" placeholder="例如：8點前"> <span class="text-rose-500">*</span>
+                                            <input type="text" id="plan-time" class="w-20 border border-slate-200 rounded-lg px-2 py-1 text-center font-bold" placeholder="如：8點前"> <span class="text-rose-500">*</span>
                                             <span>開始心無旁騖讀書。</span>
                                         </div>
                                     </div>
@@ -575,10 +579,10 @@
                             </label>
                             <p class="text-xs text-slate-400 mb-2">綜合「產業薪水」、「目標科系門檻」、「自己目前的模考戰力」，請給自己目前準備高三的成熟度打個分數：</p>
                             <div class="flex items-center gap-2 mb-3">
-                                <span class="text-xs font-bold text-slate-500">自我評估： <span class="text-rose-500">*</span></span>
-                                <input type="number" id="self-score" class="w-16 border border-slate-200 rounded-lg py-1 text-center text-sm font-bold focus:ring-1 focus:ring-violet-500" placeholder="1~10"> <span class="text-xs text-slate-400">分（滿分 10 分）</span>
+                                <span class="text-xs font-bold text-slate-500">自我評估：</span>
+                                <input type="number" id="self-score" class="w-16 border border-slate-200 rounded-lg py-1 text-center text-sm font-bold focus:ring-1 focus:ring-violet-500" placeholder="1~10"> <span class="text-rose-500">*</span> <span class="text-xs text-slate-400">分（滿分 10 分）</span>
                             </div>
-                            <textarea id="q11-ans" rows="3" class="w-full bg-slate-50 border border-slate-200 rounded-lg p-3 text-slate-800 focus:outline-none focus:ring-2 focus:ring-violet-500 text-sm leading-relaxed" placeholder="為什麼你給自己這個分數？你認為自己現在最缺乏的，是學術實力、自控力、還是對未來的清晰目標？寫一段話，誠實地面對即將上戰場的自己..."></textarea> <span class="text-rose-500">*</span>
+                            <textarea id="q11-ans" rows="3" class="w-full bg-slate-50 border border-slate-200 rounded-lg p-3 text-slate-800 focus:outline-none focus:ring-2 focus:ring-violet-500 text-sm leading-relaxed" placeholder="為什麼你給自己這個分數？你認為自己現在最缺乏的，是學術實力、自控力、還是對未來的清晰目標？寫一段話，誠實地面對即將上戰場的自己..."></textarea>
                         </div>
                     </div>
                 </div>
@@ -591,14 +595,14 @@
                     <p class="text-xs text-slate-300 mt-1">作答數據已在您的瀏覽器自動保存。如欲呈交給導師，請選擇下方動作：</p>
                 </div>
                 <div class="flex flex-wrap justify-center gap-3">
-                    <button onclick="clearData()" class="bg-slate-700 hover:bg-slate-600 text-slate-300 text-xs font-bold px-4 py-2.5 rounded-xl transition-all">
+                    <button onclick="window.clearData()" class="bg-slate-700 hover:bg-slate-600 text-slate-300 text-xs font-bold px-4 py-2.5 rounded-xl transition-all">
                         🗑️ 清除重填
                     </button>
-                    <button onclick="exportJSONBackup()" class="bg-indigo-700 hover:bg-indigo-600 text-indigo-100 text-xs font-bold px-4 py-2.5 rounded-xl transition-all flex items-center gap-1">
+                    <button onclick="window.exportJSONBackup()" class="bg-indigo-700 hover:bg-indigo-600 text-indigo-100 text-xs font-bold px-4 py-2.5 rounded-xl transition-all flex items-center gap-1">
                         📂 導出備份 JSON 檔
                     </button>
-                    <button onclick="submitToCloud()" id="btn-cloud-submit" class="bg-amber-600 hover:bg-amber-500 text-white text-xs font-bold px-4 py-2.5 rounded-xl transition-all shadow-md flex items-center gap-1">
-                        ☁️ 提交雲端資料庫
+                    <button onclick="window.submitToCloud()" id="btn-cloud-submit" class="bg-green-600 hover:bg-green-500 text-white text-xs font-bold px-4 py-2.5 rounded-xl transition-all shadow-md flex items-center gap-1">
+                        ☁️ 提交雲端資料庫 (已連線)
                     </button>
                     <button onclick="window.print()" class="bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold px-5 py-2.5 rounded-xl transition-all shadow-lg flex items-center gap-1">
                         🖨️ 匯出 PDF 報告
@@ -607,7 +611,9 @@
             </div>
         </div>
 
-        <!-- TEACHER DASHBOARD (HIDDEN BY DEFAULT) -->
+        <!-- ========================================== -->
+        <!-- TEACHER DASHBOARD (獨立區塊，切勿刪除標籤) -->
+        <!-- ========================================== -->
         <div id="teacher-view-container" class="space-y-8 hidden no-print">
             <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200">
                 <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center border-b pb-4 mb-6 gap-4">
@@ -620,9 +626,9 @@
                         <!-- JSON Import -->
                         <label class="bg-indigo-50 text-indigo-700 hover:bg-indigo-100 border border-indigo-200 text-xs font-bold px-4 py-2.5 rounded-xl transition-all cursor-pointer flex items-center gap-1">
                             📂 匯入學生 JSON 檔 (可多選)
-                            <input type="file" id="json-file-input" class="hidden" accept=".json" multiple onchange="handleJSONImport(event)">
+                            <input type="file" id="json-file-input" class="hidden" accept=".json" multiple onchange="window.handleJSONImport(event)">
                         </label>
-                        <button onclick="exportTeacherDataToCSV()" class="bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold px-4 py-2.5 rounded-xl transition-all flex items-center gap-1 shadow-md shadow-emerald-500/10">
+                        <button onclick="window.exportTeacherDataToCSV()" class="bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold px-4 py-2.5 rounded-xl transition-all flex items-center gap-1 shadow-md shadow-emerald-500/10">
                             📊 一鍵匯出 Excel (CSV)
                         </button>
                     </div>
@@ -687,6 +693,9 @@
                 </div>
             </div>
         </div>
+        <!-- ========================================== -->
+        <!-- END TEACHER DASHBOARD -->
+        <!-- ========================================== -->
     </main>
 
     <!-- CUSTOM DIALOG MODALS -->
@@ -706,13 +715,13 @@
             <h3 class="text-lg font-black text-slate-900 flex items-center gap-1">🔑 驗證教師管理權限</h3>
             <p class="text-xs text-slate-400 mt-1">請輸入教師登入密碼以解鎖班級數據分析。</p>
             <div class="mt-4">
-                <input type="password" id="teacher-password" class="w-full bg-slate-50 border border-slate-200 rounded-lg px-3 py-2 text-slate-800 text-center font-bold tracking-widest focus:outline-none focus:ring-2 focus:ring-slate-500" placeholder="••••••••" onkeyup="if(event.key === 'Enter') verifyTeacherPassword()">
+                <input type="password" id="teacher-password" class="w-full bg-slate-50 border border-slate-200 rounded-lg px-3 py-2 text-slate-800 text-center font-bold tracking-widest focus:outline-none focus:ring-2 focus:ring-slate-500" placeholder="••••••••" onkeyup="if(event.key === 'Enter') window.verifyTeacherPassword()">
             </div>
             <div class="flex justify-end gap-2 mt-6">
-                <button onclick="closeTeacherVerifyModal()" class="bg-slate-100 hover:bg-slate-200 text-slate-600 text-xs font-bold px-4 py-2 rounded-lg transition-all">
+                <button onclick="window.closeTeacherVerifyModal()" class="bg-slate-100 hover:bg-slate-200 text-slate-600 text-xs font-bold px-4 py-2 rounded-lg transition-all">
                     取消
                 </button>
-                <button onclick="verifyTeacherPassword()" class="bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold px-4 py-2 rounded-lg transition-all">
+                <button onclick="window.verifyTeacherPassword()" class="bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold px-4 py-2 rounded-lg transition-all">
                     驗證登入
                 </button>
             </div>
@@ -725,14 +734,11 @@
         <p class="mt-1 text-[10px] text-slate-400/70">請依實際生涯探索需求上網搜尋相關法規、薪情平臺、勞動部大專生就業導航及甄選委員會公開之數據。</p>
     </footer>
 
-    <!-- Firebase Modular Web SDK v11 -->
-    <script type="module">
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
-        import { getAuth, signInAnonymously } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
-        import { getFirestore, doc, setDoc, collection, onSnapshot } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
-
-
-        const myFirebaseConfig = {
+    <script>
+        // =========================================================================
+        // 🧑‍🏫 老師專用設定區塊：您的 Firebase 設定已經無縫寫入系統！
+        // =========================================================================
+        window.TEACHER_FIREBASE_CONFIG = {
             apiKey: "AIzaSyDZcHEHyLqoxYcmp1djTSYuxPQD4QeXCiM",
             authDomain: "career-survey-85285.firebaseapp.com",
             databaseURL: "https://career-survey-85285-default-rtdb.firebaseio.com",
@@ -743,142 +749,6 @@
             measurementId: "G-42QW8DL068"
         };
 
-        window.firebaseApp = null;
-        window.firebaseDb = null;
-        window.firebaseAuth = null;
-        window.firebaseConnected = false;
-
-        // Initialize Firebase on window load
-        window.initFirebase = async function() {
-            try {
-                // Check if the config is filled by the teacher
-                if (!myFirebaseConfig || Object.keys(myFirebaseConfig).length === 0) {
-                    console.log("Firebase config is empty. System will run in offline mode.");
-                    return; 
-                }
-
-                window.firebaseApp = initializeApp(myFirebaseConfig);
-                window.firebaseDb = getFirestore(window.firebaseApp);
-                window.firebaseAuth = getAuth(window.firebaseApp);
-
-                // Authenticate anonymously
-                await signInAnonymously(window.firebaseAuth);
-                window.firebaseConnected = true;
-                
-                // Update Cloud indicator in UI to Green
-                const submitBtn = document.getElementById('btn-cloud-submit');
-                if (submitBtn) {
-                    submitBtn.classList.remove('bg-amber-600', 'hover:bg-amber-500');
-                    submitBtn.classList.add('bg-green-600', 'hover:bg-green-500');
-                    submitBtn.innerText = "☁️ 提交雲端資料庫 (已連線)";
-                }
-
-                // If teacher is logged in, start real-time sync
-                if (window.currentView === 'teacher') {
-                    window.setupRealtimeSubmissions();
-                }
-            } catch (error) {
-                console.error("Firebase init failed:", error);
-                const submitBtn = document.getElementById('btn-cloud-submit');
-                if (submitBtn) submitBtn.innerText = "☁️ 雲端連線失敗 (請用 JSON 導出)";
-            }
-        };
-
-        window.submitToCloud = async function() {
-            if (!window.firebaseConnected) {
-                window.showAlert("無法直接提交至雲端 ⚠️", "老師尚未完成系統底層的雲端參數綁定。<br><br>👉 請點選左側的 <b>「📂 導出備份 JSON 檔」</b>，將檔案下載後，上傳繳交至老師指定的作業區！");
-                return;
-            }
-
-            // Client Validation (All fields must be filled!)
-            const targetFields = window.fields;
-            const targetRadios = window.radioGroups;
-
-            for (let i = 0; i < targetFields.length; i++) {
-                const id = targetFields[i];
-                const el = document.getElementById(id);
-                if (el && !el.value.trim()) {
-                    const label = window.findLabelForField(id);
-                    window.showAlert("請填寫所有欄位 ⚠️", `您的報告尚未填報完整：<br><br>請補填 <b>${label}</b> 欄位！`);
-                    setTimeout(() => {
-                        el.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                        el.classList.add('ring-2', 'ring-rose-500');
-                        el.focus();
-                    }, 300);
-                    return; // Stop execution
-                }
-            }
-
-            for (let i = 0; i < targetRadios.length; i++) {
-                const groupName = targetRadios[i];
-                const radios = document.getElementsByName(groupName);
-                let checked = false;
-                radios.forEach(r => { if (r.checked) checked = true; });
-                if (!checked) {
-                    const label = window.findLabelForRadio(groupName);
-                    window.showAlert("請填寫所有欄位 ⚠️", `您的報告尚未填報完整：<br><br>請在 <b>${label}</b> 選擇一個適合您的評估選項！`);
-                    const firstRadio = radios[0];
-                    if (firstRadio) {
-                        setTimeout(() => {
-                            firstRadio.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                        }, 300);
-                    }
-                    return; // Stop execution
-                }
-            }
-
-            const sClass = document.getElementById('student-class').value.trim();
-            const sNum = document.getElementById('student-number').value.trim();
-            const sName = document.getElementById('student-name').value.trim();
-
-            const docId = `${sClass}-${sNum}-${sName}`;
-            const studentData = window.getStudentFormData();
-
-            try {
-                const appId = typeof __app_id !== 'undefined' ? __app_id : 'career-survey-108';
-                const submissionDocRef = doc(window.firebaseDb, 'artifacts', appId, 'public', 'data', 'submissions', docId);
-                
-                await setDoc(submissionDocRef, {
-                    ...studentData,
-                    submittedAt: new Date().toISOString()
-                });
-
-                window.showAlert("提交成功 🎉", "您的生涯探索數據已安全上傳至老師的雲端資料庫中！");
-            } catch (error) {
-                console.error("Submit to cloud failed:", error);
-                window.showAlert("提交失敗 ❌", "上傳雲端時發生錯誤，可能是網路不穩定或資料庫寫入權限問題。<br>請改用「導出備份 JSON 檔」以手動呈交。");
-            }
-        };
-
-        window.setupRealtimeSubmissions = function() {
-            if (!window.firebaseDb) return;
-            const appId = typeof __app_id !== 'undefined' ? __app_id : 'career-survey-108';
-            const collRef = collection(window.firebaseDb, 'artifacts', appId, 'public', 'data', 'submissions');
-            
-            try {
-                onSnapshot(collRef, (snapshot) => {
-                    window.allSubmissions = [];
-                    snapshot.forEach((doc) => {
-                        window.allSubmissions.push(doc.data());
-                    });
-                    window.renderTeacherDashboard();
-                }, (error) => {
-                    console.error("Firestore real-time error:", error);
-                    window.showAlert("資料庫連線異常", "無法讀取後台資料，請檢查 Firebase 中的「安全規則 (Rules)」是否正確設定為 allow read, write: if true;");
-                });
-            } catch (err) {
-                console.error("Snapshot setup failed:", err);
-            }
-        };
-
-        // Fire Initialization
-        window.addEventListener('load', () => {
-            window.initFirebase();
-        });
-    </script>
-
-    <!-- Core Application Logic Script -->
-    <script>
         window.currentView = 'student';
         window.allSubmissions = []; 
 
@@ -953,7 +823,147 @@
             };
             return mapping[groupName] || groupName;
         }
+    </script>
 
+    <!-- Firebase Modular Web SDK v11 -->
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
+        import { getAuth, signInAnonymously } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
+        import { getFirestore, doc, setDoc, collection, onSnapshot } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
+
+        window.firebaseApp = null;
+        window.firebaseDb = null;
+        window.firebaseAuth = null;
+        window.firebaseConnected = false;
+
+        window.initFirebase = async function() {
+            try {
+                if (!window.TEACHER_FIREBASE_CONFIG || !window.TEACHER_FIREBASE_CONFIG.apiKey) {
+                    console.log("尚未設定 Firebase Config，系統將於離線模式運作。");
+                    return; 
+                }
+
+                window.firebaseApp = initializeApp(window.TEACHER_FIREBASE_CONFIG);
+                window.firebaseDb = getFirestore(window.firebaseApp);
+                window.firebaseAuth = getAuth(window.firebaseApp);
+
+                await signInAnonymously(window.firebaseAuth);
+                window.firebaseConnected = true;
+                
+                const submitBtn = document.getElementById('btn-cloud-submit');
+                if (submitBtn) {
+                    submitBtn.classList.remove('bg-slate-600', 'text-slate-300');
+                    submitBtn.classList.add('bg-green-600', 'text-white', 'hover:bg-green-500');
+                    submitBtn.innerText = "☁️ 提交雲端資料庫 (已連線)";
+                }
+
+                if (window.currentView === 'teacher') {
+                    window.setupRealtimeSubmissions();
+                }
+            } catch (error) {
+                console.error("Firebase init failed:", error);
+                window.firebaseConnected = false;
+            }
+        };
+
+        window.submitToCloud = async function() {
+            if (!window.firebaseConnected) {
+                window.showAlert("無法直接提交至雲端 ⚠️", "您的老師尚未開放雲端資料庫功能。<br><br>👉 請點選左側的 <b>「📂 導出備份 JSON 檔」</b>，將檔案下載後，上傳繳交至老師指定的作業區！");
+                return;
+            }
+
+            const targetFields = window.fields;
+            const targetRadios = window.radioGroups;
+
+            // 嚴格必填驗證 (不包含可以留白的模考2與模考3)
+            const optionalFields = ['mock-sub-2', 'mock-score-2', 'mock-sub-3', 'mock-score-3'];
+
+            for (let i = 0; i < targetFields.length; i++) {
+                const id = targetFields[i];
+                if (optionalFields.includes(id)) continue; 
+
+                const el = document.getElementById(id);
+                if (el && !el.value.trim()) {
+                    const label = window.findLabelForField(id);
+                    window.showAlert("請填寫所有欄位 ⚠️", `您的報告尚未填寫完整：<br><br>請補填 <b>${label}</b> 欄位！`);
+                    setTimeout(() => {
+                        el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                        el.classList.add('ring-2', 'ring-rose-500');
+                        el.focus();
+                    }, 300);
+                    return; 
+                }
+            }
+
+            for (let i = 0; i < targetRadios.length; i++) {
+                const groupName = targetRadios[i];
+                const radios = document.getElementsByName(groupName);
+                let checked = false;
+                radios.forEach(r => { if (r.checked) checked = true; });
+                if (!checked) {
+                    const label = window.findLabelForRadio(groupName);
+                    window.showAlert("請填寫所有欄位 ⚠️", `您的報告尚未評估完整：<br><br>請在 <b>${label}</b> 選擇一個適合您的選項！`);
+                    const firstRadio = radios[0];
+                    if (firstRadio) {
+                        setTimeout(() => {
+                            firstRadio.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                        }, 300);
+                    }
+                    return; 
+                }
+            }
+
+            const sClass = document.getElementById('student-class').value.trim();
+            const sNum = document.getElementById('student-number').value.trim();
+            const sName = document.getElementById('student-name').value.trim();
+
+            const docId = `${sClass}-${sNum}-${sName}`;
+            const studentData = window.getStudentFormData();
+
+            try {
+                const appId = 'career-survey-108';
+                const submissionDocRef = doc(window.firebaseDb, 'artifacts', appId, 'public', 'data', 'submissions', docId);
+                
+                await setDoc(submissionDocRef, {
+                    ...studentData,
+                    submittedAt: new Date().toISOString()
+                });
+
+                window.showAlert("提交成功 🎉", "您的生涯探索數據已安全上傳至老師的雲端資料庫中！您也可以同時點擊『匯出 PDF 報告』自己留存一份做為學習歷程檔案喔。");
+            } catch (error) {
+                console.error("Submit to cloud failed:", error);
+                window.showAlert("提交失敗 ❌", "上傳雲端時發生錯誤，可能是網路不穩定或老師的資料庫權限未正確開放。請改用「導出 JSON」繳交。");
+            }
+        };
+
+        window.setupRealtimeSubmissions = function() {
+            if (!window.firebaseDb) return;
+            const appId = 'career-survey-108';
+            const collRef = collection(window.firebaseDb, 'artifacts', appId, 'public', 'data', 'submissions');
+            
+            try {
+                onSnapshot(collRef, (snapshot) => {
+                    window.allSubmissions = [];
+                    snapshot.forEach((doc) => {
+                        window.allSubmissions.push(doc.data());
+                    });
+                    window.renderTeacherDashboard();
+                }, (error) => {
+                    console.error("Firestore real-time error:", error);
+                    window.showAlert("資料庫連線異常", "無法讀取後台資料，請檢查 Firebase 中的「安全規則 (Rules)」是否正確發布。");
+                });
+            } catch (err) {
+                console.error("Snapshot setup failed:", err);
+            }
+        };
+
+        window.addEventListener('load', () => {
+            window.initFirebase();
+        });
+    </script>
+
+    <!-- Core Application Logic Script -->
+    <script>
         function toggleToolbox() {
             const linksDiv = document.getElementById('toolbox-links');
             const toggleIcon = document.getElementById('toolbox-toggle-icon');
@@ -1003,13 +1013,15 @@
                     previewEl.src = compressedBase64;
                     previewEl.classList.remove('hidden');
                     if (placeholderEl) placeholderEl.classList.add('hidden');
+                    
+                    inputEl.classList.remove('ring-2', 'ring-rose-500');
                 };
                 img.src = e.target.result;
             };
             reader.readAsDataURL(file);
         };
 
-        window.onload = function() {
+        window.addEventListener('load', function() {
             let hasSavedDraft = false;
 
             window.fields.forEach(id => {
@@ -1061,7 +1073,7 @@
             if (hasSavedDraft) {
                 const toast = document.createElement('div');
                 toast.className = "fixed bottom-5 left-5 bg-emerald-600 text-white text-xs font-bold px-4 py-3 rounded-xl shadow-2xl z-50 flex items-center gap-2 animate-bounce no-print";
-                toast.innerHTML = "✨ <b>已自動還原您上次填寫到一半的草稿進度，請繼續完成！</b>";
+                toast.innerHTML = "✨ <b>已還原您上一次填寫進度，請繼續完成！</b>";
                 document.body.appendChild(toast);
                 setTimeout(() => {
                     toast.classList.add('transition-opacity', 'duration-500', 'opacity-0');
@@ -1069,10 +1081,10 @@
                 }, 4000);
             }
 
-            calculateGap();
-        };
+            window.calculateGap();
+        });
 
-        function calculateGap() {
+        window.calculateGap = function() {
             const sc1 = parseInt(document.getElementById('mock-score-1').value) || 0;
             const sc2 = parseInt(document.getElementById('mock-score-2').value) || 0;
             const sc3 = parseInt(document.getElementById('mock-score-3').value) || 0;
@@ -1122,8 +1134,8 @@
             return data;
         }
 
-        function clearData() {
-            window.showConfirm("確定要清除所有填答資料嗎？", "這會徹底洗掉這台電腦上所有的填答內容（但不會影響底層的雲端連線）。", () => {
+        window.clearData = function() {
+            window.showConfirm("確定要清除所有填答資料嗎？", "這會徹底洗掉這台電腦上所有的填答內容。", () => {
                 window.fields.forEach(id => {
                     localStorage.removeItem(id);
                     const el = document.getElementById(id);
@@ -1142,12 +1154,12 @@
                     if (placeholder) placeholder.classList.remove('hidden');
                 });
 
-                calculateGap();
+                window.calculateGap();
                 window.showAlert("清除成功", "您的填答草稿資料已成功清空。");
             });
         }
 
-        function exportJSONBackup() {
+        window.exportJSONBackup = function() {
             const sClass = document.getElementById('student-class').value.trim() || "未填寫";
             const sNum = document.getElementById('student-number').value.trim() || "00";
             const sName = document.getElementById('student-name').value.trim() || "無名氏";
@@ -1161,7 +1173,7 @@
             downloadAnchor.remove();
         }
 
-        function handleJSONImport(event) {
+        window.handleJSONImport = function(event) {
             const files = event.target.files;
             if (!files.length) return;
 
@@ -1205,7 +1217,7 @@
             }
         }
 
-        function exportTeacherDataToCSV() {
+        window.exportTeacherDataToCSV = function() {
             const subs = window.allSubmissions || [];
             if (!subs.length) {
                 window.showAlert("匯出失敗", "目前沒有任何學生提交的數據可供匯出。");
@@ -1227,52 +1239,18 @@
 
             subs.forEach(sub => {
                 const row = [
-                    sub['student-class'] || "",
-                    sub['student-number'] || "",
-                    sub['student-name'] || "",
-                    sub['target-domain'] || "",
-                    sub['q1-ans'] || "",
-                    sub['q2-112-avg'] || "",
-                    sub['q2-112-med'] || "",
-                    sub['q2-113-avg'] || "",
-                    sub['q2-113-med'] || "",
-                    sub['q2-114-avg'] || "",
-                    sub['q2-114-med'] || "",
-                    sub['q3-industry'] || "",
-                    sub['q4-salary'] || "",
-                    sub['q5-job-title'] || "",
-                    sub['q5-skill-1'] || "",
-                    sub['q5-skill-2'] || "",
-                    sub['q5-skill-3'] || "",
-                    sub['screenshot-1'] ? "已上傳" : "未上傳", 
-                    sub['q6-uni'] || "",
-                    sub['q6-dept'] || "",
-                    sub['q7-subject'] || "",
-                    sub['q7-score'] || "",
-                    sub['my-rank-percent'] || "",
-                    sub['mock-sub-1'] || "",
-                    sub['mock-score-1'] || "",
-                    sub['mock-sub-2'] || "",
-                    sub['mock-score-2'] || "",
-                    sub['mock-sub-3'] || "",
-                    sub['mock-score-3'] || "",
-                    sub['target-sum-score'] || "",
-                    sub['screenshot-2'] ? "已上傳" : "未上傳", 
-                    sub['pathway-ts'] || "",
-                    sub['pathway-ts-reason'] || "",
-                    sub['pathway-star'] || "",
-                    sub['pathway-star-reason'] || "",
-                    sub['pathway-apply'] || "",
-                    sub['pathway-apply-reason'] || "",
-                    sub['pathway-dist'] || "",
-                    sub['pathway-dist-reason'] || "",
-                    sub['q9-ans'] || "",
-                    sub['plan-subject'] || "",
-                    sub['plan-study-detail'] || "",
-                    sub['plan-phone'] || "",
-                    sub['plan-time'] || "",
-                    sub['self-score'] || "",
-                    sub['q11-ans'] || ""
+                    sub['student-class'] || "", sub['student-number'] || "", sub['student-name'] || "", sub['target-domain'] || "",
+                    sub['q1-ans'] || "", sub['q2-112-avg'] || "", sub['q2-112-med'] || "", sub['q2-113-avg'] || "",
+                    sub['q2-113-med'] || "", sub['q2-114-avg'] || "", sub['q2-114-med'] || "", sub['q3-industry'] || "",
+                    sub['q4-salary'] || "", sub['q5-job-title'] || "", sub['q5-skill-1'] || "", sub['q5-skill-2'] || "",
+                    sub['q5-skill-3'] || "", sub['screenshot-1'] ? "已上傳截圖" : "未上傳", sub['q6-uni'] || "", sub['q6-dept'] || "",
+                    sub['q7-subject'] || "", sub['q7-score'] || "", sub['my-rank-percent'] || "", sub['mock-sub-1'] || "",
+                    sub['mock-score-1'] || "", sub['mock-sub-2'] || "", sub['mock-score-2'] || "", sub['mock-sub-3'] || "",
+                    sub['mock-score-3'] || "", sub['target-sum-score'] || "", sub['screenshot-2'] ? "已上傳截圖" : "未上傳",
+                    sub['pathway-ts'] || "", sub['pathway-ts-reason'] || "", sub['pathway-star'] || "", sub['pathway-star-reason'] || "",
+                    sub['pathway-apply'] || "", sub['pathway-apply-reason'] || "", sub['pathway-dist'] || "", sub['pathway-dist-reason'] || "",
+                    sub['q9-ans'] || "", sub['plan-subject'] || "", sub['plan-study-detail'] || "", sub['plan-phone'] || "",
+                    sub['plan-time'] || "", sub['self-score'] || "", sub['q11-ans'] || ""
                 ].map(val => `"${val.toString().replace(/"/g, '""')}"`); 
 
                 csvRows.push(row.join(","));
@@ -1327,10 +1305,9 @@
                 const tableBody = document.getElementById('submissions-table-body');
                 const totalSpan = document.getElementById('stat-total-submissions');
                 const gapSpan = document.getElementById('stat-avg-gap');
-                const domainSpan = document.getElementById('stat-top-domain');
                 const pathSpan = document.getElementById('stat-top-pathway');
+                const domainSpan = document.getElementById('stat-top-domain');
 
-                // Error Boundary for empty or undefined arrays
                 const subs = window.allSubmissions || [];
                 totalSpan.innerText = subs.length;
 
@@ -1405,7 +1382,7 @@
                         <td class="px-4 py-3 text-slate-500 font-medium">${bestPathway}</td>
                         <td class="px-4 py-3 text-center font-bold text-slate-800">${sub['self-score'] || '0'} / 10</td>
                         <td class="px-4 py-3 text-center">
-                            <button onclick="inspectStudentSurvey(${idx})" class="text-blue-600 hover:text-blue-800 font-bold hover:underline">🔍 查看</button>
+                            <button onclick="window.inspectStudentSurvey(${idx})" class="text-blue-600 hover:text-blue-800 font-bold hover:underline">🔍 查看</button>
                         </td>
                     `;
                     tableBody.appendChild(tr);
@@ -1425,12 +1402,12 @@
             }
         };
 
-        function inspectStudentSurvey(index) {
+        window.inspectStudentSurvey = function(index) {
             const sub = window.allSubmissions[index];
             if (!sub) return;
 
-            const img1Markup = sub['screenshot-1'] ? `<div class="mt-2"><span class="font-bold block text-slate-500 mb-1">任務一佐證截圖：</span><img src="${sub['screenshot-1']}" class="max-h-48 rounded border shadow-sm"></div>` : '<div class="text-rose-500 italic">⚠️ 任務一無上傳佐證截圖</div>';
-            const img2Markup = sub['screenshot-2'] ? `<div class="mt-2"><span class="font-bold block text-slate-500 mb-1">任務二佐證截圖：</span><img src="${sub['screenshot-2']}" class="max-h-48 rounded border shadow-sm"></div>` : '<div class="text-rose-500 italic">⚠️ 任務二無上傳佐證截圖</div>';
+            const img1Markup = sub['screenshot-1'] ? `<div class="mt-2"><span class="font-bold block text-slate-500 mb-1">任務一佐證截圖：</span><img src="${sub['screenshot-1']}" class="max-w-full rounded border shadow-sm"></div>` : '<div class="text-rose-500 italic text-xs">⚠️ 任務一無上傳佐證截圖</div>';
+            const img2Markup = sub['screenshot-2'] ? `<div class="mt-2"><span class="font-bold block text-slate-500 mb-1">任務二佐證截圖：</span><img src="${sub['screenshot-2']}" class="max-w-full rounded border shadow-sm"></div>` : '<div class="text-rose-500 italic text-xs">⚠️ 任務二無上傳佐證截圖</div>';
 
             let contentHtml = `
                 <div class="space-y-4 text-xs text-slate-700">
@@ -1487,7 +1464,7 @@
             }
 
             mActions.innerHTML = `
-                <button onclick="closeModal()" class="bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold px-5 py-2.5 rounded-xl transition-all">
+                <button onclick="window.closeModal()" class="bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold px-5 py-2.5 rounded-xl transition-all">
                     我知道了
                 </button>
             `;
@@ -1505,7 +1482,7 @@
             mMsg.innerText = message;
 
             mActions.innerHTML = `
-                <button onclick="closeModal()" class="bg-slate-100 hover:bg-slate-200 text-slate-600 text-xs font-bold px-4 py-2 rounded-xl transition-all">
+                <button onclick="window.closeModal()" class="bg-slate-100 hover:bg-slate-200 text-slate-600 text-xs font-bold px-4 py-2 rounded-xl transition-all">
                     取消
                 </button>
                 <button id="modal-confirm-btn" class="bg-rose-600 hover:bg-rose-500 text-white text-xs font-bold px-4 py-2 rounded-xl transition-all">
@@ -1515,34 +1492,32 @@
 
             document.getElementById('modal-confirm-btn').onclick = () => {
                 confirmCallback();
-                closeModal();
+                window.closeModal();
             };
 
             modal.classList.remove('hidden');
         };
 
-        function closeModal() {
+        window.closeModal = function() {
             document.getElementById('custom-modal').classList.add('hidden');
         }
 
-        function openTeacherVerifyModal() {
+        window.openTeacherVerifyModal = function() {
             document.getElementById('teacher-verify-modal').classList.remove('hidden');
-            // Auto focus password input
             setTimeout(() => document.getElementById('teacher-password').focus(), 100);
         }
 
-        function closeTeacherVerifyModal() {
+        window.closeTeacherVerifyModal = function() {
             document.getElementById('teacher-verify-modal').classList.add('hidden');
+            document.getElementById('teacher-password').value = "";
         }
 
-        function verifyTeacherPassword() {
+        window.verifyTeacherPassword = function() {
             const pass = document.getElementById('teacher-password').value;
             if (pass === "teacher888") {
-                closeTeacherVerifyModal();
+                window.closeTeacherVerifyModal();
                 toggleView('teacher');
-                document.getElementById('teacher-password').value = ""; // Clear input for security
             } else {
-                // FIXED: Changed alert text to prevent password leak
                 window.showAlert("密碼錯誤 ❌", "您輸入的管理密碼不正確，請重新確認。");
                 document.getElementById('teacher-password').value = "";
             }
